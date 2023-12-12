@@ -15,6 +15,9 @@ body {
 div.col-3 {
   background-color: black;
 }
+#avatarTop{
+  height: 25px;
+}
 #like i {
   background: linear-gradient(
     135deg,
