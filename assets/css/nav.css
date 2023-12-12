@@ -48,3 +48,6 @@ div.col-3 {
 .scrollbar::-webkit-scrollbar-thumb {
   background-color: #4d4d4d;
 }
+#plus{
+    transform: rotate(45deg);
+}
