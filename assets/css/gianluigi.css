@@ -1,0 +1,116 @@
+@media screen and (max-width: 992px) {  
+
+    .playsolder {
+        display: flex;
+        width: 85%;
+        margin: auto;
+        color: white;
+        background-color: black
+    }
+
+    .playsolder svg {
+        margin-top: 12px;
+        font-size: 1.5rem;
+        color: white;
+        border: none;
+
+    }
+
+    .playsolder input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        background-color: black;
+        color: white;
+    } /*  da cambiare il bordo bianco outline input */
+
+    #searchBar{
+        flex: 1;
+        border: none;
+        padding: 10px;
+        background-color: black;
+        color: white;
+    }
+
+}
+
+@media screen and (min-width: 992px) { 
+
+    .uno {
+        display: none;
+        color: white;
+        padding-bottom: 20px;
+        margin-left: 5px;
+        font-size: 3em;
+    }
+
+
+    #conteiner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fr {
+        display: flex;
+
+
+    }
+
+    .playsolder {
+        display: flex;
+        width: 85%;
+        margin: auto;
+        ;
+        background-color: black;
+
+    }
+
+    .playsolder svg {
+        margin-top: 12px;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .playsolder input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        background-color: black;
+        color: white;
+    }
+
+    input:focus {
+        outline: red;
+    }
+}
+
+.quattro {
+    position: relative;
+    background-color: aqua;
+    overflow: hidden;
+    margin-bottom: 6px;
+    height: 170px;
+    margin-right: 6px;
+    margin-left: 14px;
+}
+.prova{
+    
+        position: absolute;
+        bottom: 0;
+        right: -20%;
+        width: 50%;
+        transform: rotate(25deg);
+       
+}
+ 
+
+  h3{
+    color: aliceblue;
+    z-index: 100;
+  }
+
+  h2 {
+    color: white;
+   
+  }
+ 
