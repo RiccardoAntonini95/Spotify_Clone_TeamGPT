@@ -1,5 +1,5 @@
 html {
-  font-size: 0.6em;
+  font-size: 0.65em;
   line-height: 2;
 }
 main {
@@ -34,6 +34,8 @@ div.col-3 {
   font-size: 2em;
 }
 .scrollbar {
+  overflow: hidden;
+  line-height: 2.5;
   padding: 5px 0;
   overflow-y: scroll;
   height: 480px;
@@ -50,4 +52,8 @@ div.col-3 {
 }
 #plus{
     transform: rotate(45deg);
+}
+#profile{
+  width: 20px;
+  height: 25px;
 }
