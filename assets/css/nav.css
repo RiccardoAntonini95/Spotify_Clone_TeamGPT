@@ -1,0 +1,101 @@
+html {
+  font-size: 0.65em;
+  line-height: 2;
+}
+main {
+  height: 100%;
+}
+body {
+  height: 100vh;
+  background-color: #121212;
+}
+
+/* LEFT SIDEBAR */
+main div.col-3 {
+  background-color: black;
+}
+#like i {
+  background: linear-gradient(
+    135deg,
+    rgba(66, 21, 190, 1) 0%,
+    rgba(121, 142, 136, 1) 70%
+  );
+}
+#bookmark i {
+  color: green;
+  background-color: darkgreen;
+}
+#bookmark {
+  border-bottom: 1px solid rgb(31, 31, 31);
+  margin-bottom: 5px;
+}
+.scrollbar {
+  overflow: hidden;
+  line-height: 2.5;
+  padding: 5px 0;
+  overflow-y: scroll;
+  height: 480px;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+  margin: 5px 0;
+}
+.scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4d4d4d;
+}
+
+/* TOPBAR */
+.navArrows{
+  padding: 3px 6px;
+}
+
+#avatarContainer{
+  position: relative;
+  left: 10%;
+}
+
+#avatarTop{
+  height: 25px;
+}
+
+/* NAV MOBILE ONLY */
+#navMobile {
+  font-size: 2em;
+  background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(18,18,18,0.499124649859944) 100%);
+}
+
+/* RIGHT SIDEBAR */
+.profile{
+  width: 25px;
+  height: 25px;
+}
+
+/* PLAYER BAR */
+#player{
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  bottom: 0px;
+  background-color:#181818;
+}
+#playerMobile{
+  height: 60px;
+  font-size: 1.5em;
+  bottom: 9.5%;
+}
+.progressBar{
+  width: 100%;
+}
+
+/* PAGINA RICCARDO ALBUM */
+
+#fotoAlbum{
+  box-shadow: 0px 0px 20px -5px black;
+}
+
+#fotoArtista{
+  height: fit-content;
+}
