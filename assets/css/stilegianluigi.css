@@ -1,0 +1,152 @@
+@media screen and (max-width: 720px) {
+    body {
+        background-color: gray;
+    }
+
+    .rr {
+        display: none;
+    }
+
+    .playsolder {
+        display: flex;
+        width: 85%;
+        margin: auto;
+        color: white;
+        background-color: grey;
+        background-color: black
+    }
+
+    input:focus {
+        outline: red;
+    }
+
+    .playsolder svg {
+        margin-top: 12px;
+        font-size: 1.5rem;
+        color: white;
+        border: none;
+
+    }
+
+    .playsolder input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        background-color: black;
+        color: white;
+    }
+
+    .angle-brackets {
+        display: none;
+    }
+
+    .uno {
+        color: white;
+        padding-bottom: 20px;
+        margin-left: 5px;
+        font-size: 3em;
+    }
+
+}
+
+@media screen and (min-width: 720px) {
+    .uno {
+        display: none;
+
+    }
+
+
+    .angle-brackets {
+        display: flex;
+
+    }
+
+
+    .angle-brackets p {
+        margin-right: 20px;
+        background-color: black;
+        color: aliceblue;
+        border-radius: 50%;
+        font-size: 1.8rem;
+
+
+    }
+
+    #conteiner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fr {
+        display: flex;
+
+
+    }
+
+    .playsolder {
+        display: flex;
+        width: 85%;
+        margin: auto;
+        ;
+        background-color: black;
+
+    }
+
+    .playsolder svg {
+        margin-top: 12px;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .playsolder input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        background-color: black;
+        color: white;
+    }
+
+    body {
+        background-color: grey;
+    }
+
+    input:focus {
+        outline: red;
+    }
+}
+
+.quattro {
+    position: relative;
+    background-color: aqua;
+    overflow: hidden;
+    margin-bottom: 6px;
+    height: 170px;
+    margin-right: 6px;
+    margin-left: 14px;
+}
+.prova{
+    
+        position: absolute;
+        bottom: 0;
+        right: -20%;
+        width: 50%;
+        transform: rotate(25deg);
+       
+}
+
+
+#avatarTop{
+    height: 25px;
+  }
+ 
+
+  h3{
+    color: aliceblue;
+    z-index: 100;
+  }
+
+  h2 {
+    color: white;
+   
+  }
+ 
