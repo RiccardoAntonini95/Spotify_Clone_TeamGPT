@@ -1,4 +1,65 @@
 body {
-    background-color: #151515;
+    background: linear-gradient(0deg, rgba(8, 8, 8, 1) 0%, rgba(21, 21, 21, 1) 100%);
     color: white;
+}
+
+#avatarTop {
+    height: 25px;
+}
+
+#box-ADV {
+    color: white;
+    background: linear-gradient(203deg, rgba(21, 21, 21, 0.2) 53%, rgba(0, 0, 0, 1) 100%);
+    border: none;
+}
+
+#titolo-ADV {
+    font-size: 3rem;
+}
+
+#btn-nascondiADV {
+    background-color: #2222223a;
+    border: none;
+}
+
+
+#box-PLAYLIST {
+    color: antiquewhite;
+    background-color: #2D2D2D;
+    
+
+}
+
+#btn-tagPLAYLIST1 {
+    background-color: #2222223a;
+    border: none;
+}
+
+#btn-tagPLAYLIST2 {
+    background-color: #2222223a;
+    border: none;
+}
+
+.img-Iniziale {
+    border-top-left-radius: 6px;
+}
+
+.img-Finale {
+    border-bottom-left-radius: 6px;
+}
+
+.text-descrizionePLAYLIST {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#box-CONSIGLI {
+    color: antiquewhite;
+    background-color: #2D2D2D;
+}
+
+#img-CONSIGLI {
+    border-radius: 6px;
+    
 }
