@@ -54,12 +54,13 @@ body {
     text-overflow: ellipsis;
 }
 
-#box-CONSIGLI {
+.box-CONSIGLI {
     color: antiquewhite;
     background-color: #2D2D2D;
+    text-align: left;
 }
 
-#img-CONSIGLI {
+.img-CONSIGLI {
     border-radius: 6px;
     
 }
