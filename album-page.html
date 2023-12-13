@@ -100,8 +100,276 @@
                     </ul>
                 </div>
             </div>
-          <div id="albumPage"></div> <!-- qua va la pagina album col JS di RICCARDO fai query selector-->
-        </div>
+          <div id="albumPage">
+            <div class="border border-white py-4"> <!--  la pagina album -->
+              <div class="d-lg-flex flex-column flex-lg-row">
+                <div class="px-4">
+                  <img src="assets/imgs/main/image-12.jpg" id="fotoAlbum" class="img-fluid" alt="foto-album">
+                </div>
+                <div class="px-4 d-lg-flex flex-wrap text-start pt-lg-5">
+                  <p class="d-none d-lg-block text-white fw-bold align-self-end mb-0 w-100">ALBUM</p>
+                  <p class="display-4 text-white fw-bold">Nome dell'album</p>
+                  <div class="d-flex text-white gap-1 align-self-end">
+                    <img src="assets/imgs/main/image-18.jpg" width="25" id="fotoArtista" class="rounded-circle" alt="foto-artista">
+                    <div class="d-flex gap-1">
+                    <p class="fw-bold">nome artista</p>
+                    <p class="d-none d-lg-inline">&#8729;</p>
+                    <p class="d-none d-lg-inline">2017</p>
+                    <p class="d-none d-lg-inline">&#8729;</p>
+                    <p class="fw-bold d-none d-lg-inline">12 brani</p>
+                    <p class="d-none d-lg-inline">durata album</p>
+                    </div>
+                  </div>
+                  <div class="d-lg-none text-light">
+                    <p>Album &#8729; 2017</p>
+                  </div>
+                </div>
+              </div>
+              <div class="border border-white"> <!-- questo è quello che sta sotto allo sfondo giallo dal play in giù -->
+                <div class="d-flex gap-4 justify-content-between justify-content-lg-start align-items-center px-4 d-lg-flex">
+                  <div class="d-flex gap-4 order-lg-2">
+                    <i class="fs-1 bi bi-suit-heart"></i>
+                    <i class="fs-1 bi bi-arrow-down-circle"></i>
+                    <i class="fs-1 bi bi-three-dots-vertical rotate-90"></i>
+                  </div>
+                  <div class="d-flex gap-4">
+                    <i class="fs-1 bi bi-shuffle d-lg-none p-2"></i>
+                    <i class="fs-1 bi bi-play-circle-fill p-2" id="btnPlay"></i>
+                  </div>
+                </div>
+              <div class="d-lg-none">
+                <div class="row justify-content-between px-3">
+                  <div class="col text-start">
+                    <p class="m-0">titolo</p>
+                    <p class="m-0">artista</p>
+                  </div>
+                  <div class="col text-end">
+                    <i class="fs-1 bi bi-three-dots-vertical"></i>
+                  </div>
+                </div>
+                <div class="row justify-content-between px-3">
+                  <div class="col text-start">
+                    <p class="m-0">titolo</p>
+                    <p class="m-0">artista</p>
+                  </div>
+                  <div class="col text-end">
+                    <i class="fs-1 bi bi-three-dots-vertical"></i>
+                  </div>
+                </div>
+                <div class="row justify-content-between px-3">
+                  <div class="col text-start">
+                    <p class="m-0">titolo</p>
+                    <p class="m-0">artista</p>
+                  </div>
+                  <div class="col text-end">
+                    <i class="fs-1 bi bi-three-dots-vertical"></i>
+                  </div>
+                </div>
+                <div class="row justify-content-between px-3">
+                  <div class="col text-start">
+                    <p class="m-0">titolo</p>
+                    <p class="m-0">artista</p>
+                  </div>
+                  <div class="col text-end">
+                    <i class="fs-1 bi bi-three-dots-vertical"></i>
+                  </div>
+                </div>
+                <div class="row justify-content-between px-3">
+                  <div class="col text-start">
+                    <p class="m-0">titolo</p>
+                    <p class="m-0">artista</p>
+                  </div>
+                  <div class="col text-end">
+                    <i class="fs-1 bi bi-three-dots-vertical"></i>
+                  </div>
+                </div>
+                <div class="row justify-content-between px-3">
+                  <div class="col text-start">
+                    <p class="m-0">titolo</p>
+                    <p class="m-0">artista</p>
+                  </div>
+                  <div class="col text-end">
+                    <i class="fs-1 bi bi-three-dots-vertical"></i>
+                  </div>
+                </div>
+                <div class="row justify-content-between px-3">
+                  <div class="col text-start">
+                    <p class="m-0">titolo</p>
+                    <p class="m-0">artista</p>
+                  </div>
+                  <div class="col text-end">
+                    <i class="fs-1 bi bi-three-dots-vertical"></i>
+                  </div>
+                </div>
+              
+                <div class="row justify-content-between px-3">
+                  <div class="col text-start">
+                    <p class="m-0">titolo</p>
+                    <p class="m-0">artista</p>
+                  </div>
+                  <div class="col text-end">
+                    <i class="fs-1 bi bi-three-dots-vertical"></i>
+                  </div>
+                </div>
+              </div>
+              
+                <div class="container text-center d-none d-lg-block">
+                  <div class="row border-bottom">
+                    <div class="col-1">
+                      #
+                    </div>
+                    <div class="col-6 text-start">
+                      TITOLO
+                    </div>
+                    <div class="col-4">
+                      RIPRODUZIONI
+                    </div>
+                    <div class="col-1">
+                      <i class="bi bi-clock"></i>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-1">
+                      1
+                    </div>
+                    <div class="col-6 text-start">
+                      <div>
+                        <p class="m-0">TITOLO</p>
+                        <p class="m-0">artista</p>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      RIPRODUZIONI
+                    </div>
+                    <div class="col-1">
+                      <i class="bi bi-clock"></i>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-1">
+                      2
+                    </div>
+                    <div class="col-6 text-start">
+                      <div>
+                        <p class="m-0">TITOLO</p>
+                        <p class="m-0">artista</p>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      RIPRODUZIONI
+                    </div>
+                    <div class="col-1">
+                      <i class="bi bi-clock"></i>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-1">
+                      3
+                    </div>
+                    <div class="col-6 text-start">
+                      <div>
+                        <p class="m-0">TITOLO</p>
+                        <p class="m-0">artista</p>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      RIPRODUZIONI
+                    </div>
+                    <div class="col-1">
+                      <i class="bi bi-clock"></i>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-1">
+                      4
+                    </div>
+                    <div class="col-6 text-start">
+                      <div>
+                        <p class="m-0">TITOLO</p>
+                        <p class="m-0">artista</p>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      RIPRODUZIONI
+                    </div>
+                    <div class="col-1">
+                      <i class="bi bi-clock"></i>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-1">
+                      5
+                    </div>
+                    <div class="col-6 text-start">
+                      <div>
+                        <p class="m-0">TITOLO</p>
+                        <p class="m-0">artista</p>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      RIPRODUZIONI
+                    </div>
+                    <div class="col-1">
+                      <i class="bi bi-clock"></i>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-1">
+                      6
+                    </div>
+                    <div class="col-6 text-start">
+                      <div>
+                        <p class="m-0">TITOLO</p>
+                        <p class="m-0">artista</p>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      RIPRODUZIONI
+                    </div>
+                    <div class="col-1">
+                      <i class="bi bi-clock"></i>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-1">
+                      7
+                    </div>
+                    <div class="col-6 text-start">
+                      <div>
+                        <p class="m-0">TITOLO</p>
+                        <p class="m-0">artista</p>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      RIPRODUZIONI
+                    </div>
+                    <div class="col-1">
+                      <i class="bi bi-clock"></i>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-1">
+                      8
+                    </div>
+                    <div class="col-6 text-start">
+                      <div>
+                        <p class="m-0">TITOLO</p>
+                        <p class="m-0">artista</p>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      RIPRODUZIONI
+                    </div>
+                    <div class="col-1">
+                      <i class="bi bi-clock"></i>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+              </div>
+            </div>
+          </div> <!-- qua va la pagina album col JS di RICCARDO fai query selector-->
         <div class="col-2 d-none d-lg-block bg-black">
           <div class="row align-items-center my-5">
             <div class="col-8">
@@ -152,6 +420,7 @@
             <div class="col-2"></div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   </main>

@@ -99,3 +99,9 @@ main div.col-3 {
 #fotoArtista{
   height: fit-content;
 }
+
+@media screen and (min-width: 992px) {
+  .rotate-90{
+    transform: rotate(90deg);
+  }
+}
