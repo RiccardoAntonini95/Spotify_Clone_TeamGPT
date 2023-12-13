@@ -64,3 +64,13 @@
   font-weight: 900;
   font-style: italic;
 }
+
+*{
+  font-family: 'circular';
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-weight: 900;
+}
+
