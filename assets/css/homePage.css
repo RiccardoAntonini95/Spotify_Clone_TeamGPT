@@ -1,6 +1,6 @@
 body {
-    background: linear-gradient(0deg, rgba(8, 8, 8, 1) 0%, rgba(21, 21, 21, 1) 100%);
     color: white;
+    overflow-x: hidden;
 }
 
 #box-ADV {
@@ -9,18 +9,15 @@ body {
     border: none;
 }
 
-#titolo-ADV {
-    font-size: 3rem;
-}
-
 #btn-nascondiADV {
     background-color: #2222223a;
     border: none;
 }
 
-#box-PLAYLIST {
-    color: antiquewhite;
+.box-PLAYLIST {
+    color: white;
     background-color: #2D2D2D;
+    border:none
 }
 
 #btn-tagPLAYLIST1 {
@@ -30,30 +27,54 @@ body {
 
 #btn-tagPLAYLIST2 {
     background-color: #2222223a;
-    border: none;
+    border: none;  
 }
 
 .img-Iniziale {
-    border-top-left-radius: 6px;
+    border-top-left-radius: 4px;
 }
 
 .img-Finale {
-    border-bottom-left-radius: 6px;
+    border-bottom-left-radius: 4px;
 }
 
 .text-descrizionePLAYLIST {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-top: 1rem;
 }
 
 .box-CONSIGLI {
-    color: antiquewhite;
+    color: white;
     background-color: #2D2D2D;
     text-align: left;
 }
 
-.img-CONSIGLI {
-    border-radius: 6px;
-    
+.box-CONSIGLI p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+
+.box-CONSIGLI:hover{
+    background-color: #353535;
+}
+
+.cursore-puntatore:hover {
+    cursor: pointer;
+}
+
+.img-CONSIGLI {
+    border-radius: 8px;
+    box-shadow: 5px 5px 11px -2px rgba(0,0,0,0.64);
+}
+
+.icon-change:hover{
+    transform: scale(1.1) 
+}
+
+.text-NODECORATION {
+    color: white !important;
+}
+

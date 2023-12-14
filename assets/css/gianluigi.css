@@ -1,0 +1,87 @@
+@media screen and (max-width: 992px) {
+
+    .playsolder {
+        display: flex;
+        width: 85%;
+        margin: auto;
+        color: white;
+        background-color: #1B1B1B
+    }
+
+    .playsolder input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        background-color: #1B1B1B;
+        color: white;
+    } /*  da cambiare il bordo bianco outline input */
+    h2{
+        color: white;
+        text-align: center;
+    }
+    input:focus {
+        outline: red;
+    }
+
+}
+
+@media screen and (min-width: 992px) { 
+    #conteiner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .playsolder {
+        display: flex;
+        width: 85%;
+        margin: auto;
+        background-color: #1B1B1B;
+        margin-top: 5px;
+        width: 20rem;
+        color: aliceblue;
+        border: none;
+    }
+
+    h2 {
+        color: white;
+        text-align: left;
+        margin: 7rem 0rem 0rem 5rem;
+    }
+    input:focus {
+        outline: red;
+    }
+}
+
+.quattro {
+    position: relative;
+    background-color: aqua;
+    overflow: hidden;
+    height: 150px;
+    margin: 0.6rem;
+}
+.prova{
+        position: absolute;
+        bottom: 0;
+        right: -20%;
+        width: 50%;
+        transform: rotate(25deg);
+        z-index: 0;
+}
+ 
+  h3{
+    color: aliceblue;
+    z-index: 1;
+    padding: 1rem 0rem 0rem 0.8rem;
+  }
+
+  #search-contenitore {
+    background-color: #1B1B1B;
+  }
+
+  #button-leftRight{
+    margin-left: 25rem;
+  }
+
+  #avatarContainer {
+    margin-right: 30rem;
+  }

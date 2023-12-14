@@ -1,9 +1,10 @@
 html {
   font-size: 0.65em;
-  line-height: 2;
+  line-height: 2; 
 }
 main {
   height: 100%;
+  width: 100%;
 }
 body {
   height: 100vh;
@@ -11,9 +12,10 @@ body {
 }
 
 /* LEFT SIDEBAR */
-main div.col-3 {
+#barra-sinistra {
   background-color: black;
 }
+
 #like i {
   background: linear-gradient(
     135deg,
