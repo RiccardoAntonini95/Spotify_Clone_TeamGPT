@@ -113,3 +113,14 @@
     color: white;
 
   }
+  
+  .serach-page-scroll::-webkit-scrollbar {
+    width: 8px;
+    margin: 5px 0;
+  }
+  .serach-page-scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  .serach-page-scroll::-webkit-scrollbar-thumb {
+    background-color: #4d4d4d;
+  }
