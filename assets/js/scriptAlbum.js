@@ -2,3 +2,5 @@
 //id dell'album sufficiente come dati, prendere con url search param e fetchare quello
 // ho l'anno con i giorni, numero brani senza scritta "brani", duration diviso 100
 //riproduzioni ci metto rank
+
+//qua mi serviranno due cicli diversi per la parte inferiore

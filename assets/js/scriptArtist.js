@@ -3,11 +3,11 @@ let artistaCercato = localStorage.getItem("ricerca")
 const urlDinamico = `https://deezerdevs-deezer.p.rapidapi.com/search?q={${artistaCercato}}`
 
 let param = new URLSearchParams(document.location.search)
-let artistId = param.get("id")  //if questo diverso true  --->  if(artistid){}
+let artistId = param.get("id")  
 let artistName = param.get("nameArtist")
 const urlParam = `https://deezerdevs-deezer.p.rapidapi.com/artist/${artistName}`
 
-//i fetch vanno dentro un if
+
 if (artistId) {  
     //fetch del link artista coi param
     fetch(urlParam, {
@@ -19,7 +19,8 @@ if (artistId) {
     })
         .then(response => response.json())
         .then(data => console.log(data))
-        //innerHTML della pagina artisti usando il link dei queen  // name nb_fan picture
+        //innerHTML della pagina artisti usando il link dei queen  // name nb_fan picture 
+        //prima la parte senza ciclo commentata nel template artista, poi l'altra ciclata
 } else {
     //fetch del localstorage
     fetch(urlDinamico, {
