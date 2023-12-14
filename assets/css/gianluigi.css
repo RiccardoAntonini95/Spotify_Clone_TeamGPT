@@ -1,126 +1,118 @@
 @media screen and (max-width: 992px) {
+  .playsolder {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    color: white;
+    background-color: black;
+  }
 
-    .playsolder {
-        display: flex;
-        width: 85%;
-        margin: auto;
-        color: white;
-        background-color: black
-    }
+  .playsolder svg {
+    margin-top: 12px;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+  }
 
-    .playsolder svg {
-        margin-top: 12px;
-        font-size: 1.5rem;
-        color: white;
-        border: none;
+  .playsolder input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  } /*  da cambiare il bordo bianco outline input */
 
-    }
-
-    .playsolder input {
-        flex: 1;
-        border: none;
-        padding: 10px;
-        background-color: black;
-        color: white;
-    } /*  da cambiare il bordo bianco outline input */
-
-    #searchBar{
-        flex: 1;
-        border: none;
-        padding: 10px;
-        background-color: black;
-        color: white;
-    }
-
+  #searchBar {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
 }
 
-@media screen and (min-width: 992px) { 
+@media screen and (min-width: 992px) {
+  .uno {
+    display: none;
+    color: white;
+    padding-bottom: 20px;
+    margin-left: 5px;
+    font-size: 3em;
+  }
 
-    .uno {
-        display: none;
-        color: white;
-        padding-bottom: 20px;
-        margin-left: 5px;
-        font-size: 3em;
-    }
+  #conteiner {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .fr {
+    display: flex;
+  }
 
-    #conteiner {
-        display: flex;
-        justify-content: space-between;
-    }
+  .playsolder {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    background-color: black;
+  }
 
-    .fr {
-        display: flex;
+  .playsolder svg {
+    margin-top: 12px;
+    font-size: 1.5rem;
+    color: white;
+  }
 
+  .playsolder input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
 
-    }
-
-    .playsolder {
-        display: flex;
-        width: 85%;
-        margin: auto;
-        ;
-        background-color: black;
-
-    }
-
-    .playsolder svg {
-        margin-top: 12px;
-        font-size: 1.5rem;
-        color: white;
-    }
-
-    .playsolder input {
-        flex: 1;
-        border: none;
-        padding: 10px;
-        background-color: black;
-        color: white;
-    }
-
-    input:focus {
-        outline: red;
-    }
+  input:focus {
+    outline: red;
+  }
 }
 
 .quattro {
-    position: relative;
-    background-color: aqua;
-    overflow: hidden;
-    margin-bottom: 6px;
-    height: 170px;
-    margin-right: 6px;
-    margin-left: 14px;
+  position: relative;
+  background-color: aqua;
+  overflow: hidden;
+  margin-bottom: 6px;
+  height: 170px;
+  margin-right: 6px;
+  margin-left: 14px;
 }
-.prova{
-
-        position: absolute;
-        bottom: 0;
-        right: -20%;
-        width: 50%;
-        transform: rotate(25deg);
-
+.prova {
+  position: absolute;
+  bottom: 0;
+  right: -20%;
+  width: 50%;
+  transform: rotate(25deg);
 }
- 
 
-  h3{
-    color: aliceblue;
-    z-index: 100;
-  }
+h3 {
+  color: aliceblue;
+  z-index: 100;
+}
 
-  h2 {
-    color: white;
-
-  }
-  
-  .serach-page-scroll::-webkit-scrollbar {
-    width: 8px;
-    margin: 5px 0;
-  }
-  .serach-page-scroll::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-  .serach-page-scroll::-webkit-scrollbar-thumb {
-    background-color: #4d4d4d;
-  }
+h2 {
+  color: white;
+}
+.search-page-scroll {
+  height: 85vh;
+  overflow-y: scroll;
+}
+.search-page-scroll::-webkit-scrollbar {
+  width: 8px;
+  margin: 5px 0;
+  height: 85vh;
+  overflow-y: scroll;
+}
+.search-page-scroll::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.search-page-scroll::-webkit-scrollbar-thumb {
+  background-color: #4d4d4d;
+}
