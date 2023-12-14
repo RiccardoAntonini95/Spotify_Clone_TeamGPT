@@ -82,7 +82,25 @@
         </div>
 
         <div class="col text-center">
-          Schermata centrale
+            <div class="d-none d-lg-flex justify-content-evenly pt-2 fixed-top">
+                <div class="d-flex gap-2">
+                    <div class="text-secondary rounded-circle bg-black fs-5 navArrows"><i class="bi bi-chevron-left"></i>
+                    </div>
+                    <div class="text-secondary rounded-circle bg-black fs-5 navArrows"><i class="bi bi-chevron-right"></i></div>
+                </div>
+                <div id="avatarContainer" class="dropdown rounded-pill bg-black d-flex align-items-start">
+                    <img src="assets/imgs/main/image-1.jpg" id="avatarTop" class="rounded-circle p-1" alt="avatar">
+                    <button class="btn btn-black rounded-pill dropdown-toggle fw-bold text-white" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Lidia Nautilus...
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Apri Chat GPT</a></li>
+                        <li><a class="dropdown-item" href="#">Fatti fare i compiti</a></li>
+                    </ul>
+                </div>
+            </div>
+          <div id="albumPage"></div> <!-- qua va la pagina album col JS di RICCARDO fai query selector-->
         </div>
         <div class="col-2 d-none d-lg-block bg-black">
           <div class="row align-items-center my-5">

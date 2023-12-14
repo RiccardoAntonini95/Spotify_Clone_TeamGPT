@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/circular-font.css">
+  <link rel="stylesheet" href="assets/css/homePage.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
+  <title>Spotify Clone</title>
+</head>
+
+<body>
+  <main>
+    <div class="container-fluid h-100">
+      <div class="row h-100">
+        <div class="col-3 d-none d-lg-block">
+          <nav id="sideNav" class="nav d-lg flex-column p-2">
+            <div class="d-flex align-items-center"><i class="bi bi-three-dots text-white"></i><a
+                class="nav-link text-white" href="#"></a></div>
+            <div class="d-flex align-items-center"><i class="bi bi-house-door text-white"></i><a
+                class="nav-link text-white" href="#">Home</a></div>
+            <div class="d-flex align-items-center"><i class="bi bi-search text-white"></i><a class="nav-link text-white"
+                href="#">Cerca</a></div>
+            <div class="d-flex align-items-center"><i class="bi bi-music-note-list text-white"></i><a
+                class="nav-link text-white" href="#">La tua libreria</a></div>
+          </nav>
+          <div class="ps-2">
+            <div class="d-flex align-items-center"><i class="bi bi-plus-lg px-1 my-2 bg-white rounded-1"></i><a
+                class="nav-link text-white mx-2" href="#">Crea playlist</a></div>
+            <div id="like" class="d-flex align-items-center"><i
+                class="bi bi-heart-fill text-white px-1 my-2 rounded-1"></i><a class="nav-link text-white mx-2"
+                href="#">Brani che ti piacciono</a></div>
+            <div id="bookmark" class="d-flex align-items-center"><i
+                class="bi bi-bookmark-fill px-1 my-2 rounded-1"></i><a class="nav-link text-white mx-2" href="#">I tuoi
+                episodi</a></div>
+
+            <ul class="list-group scrollbar">
+              <li><a class="nav-link text-white" href="#">&#9962; 🙏 Hit mania Clero 2000 🙏 &#9962;</a></li>
+              <li><a class="nav-link text-white" href="#">early stage emily syndrome (sett-ott 2022)</a></li>
+              <li><a class="nav-link text-white" href="#">silvano d'orba? I hardly know her (lug - ago 2021)</a></li>
+              <li><a class="nav-link text-white" href="#">landing page (mar-apr 2022)
+                </a></li>
+              <li><a class="nav-link text-white" href="#">Dragon Ball &#128009;</a></li>
+              <li><a class="nav-link text-white" href="#">Be The Young</a></li>
+              <li><a class="nav-link text-white" href="#">Francesco Guccini Mix</a></li>
+              <li><a class="nav-link text-white" href="#">silvano d'orba? I hardly know her (lug - ago 2021)
+              <li><a class="nav-link text-white" href="#">Culo 2021 &#127825; &#127825;</a></li>
+              </a></li>
+              <li><a class="nav-link text-white" href="#">honey and glass (nov-dic 2021)
+                </a></li>
+              <li><a class="nav-link text-white" href="#">minecraft e nintendo switch (sep-oct 2021)
+                </a></li>
+              <li><a class="nav-link text-white" href="#">2021 lol</a></li>
+              <li><a class="nav-link text-white" href="#">cosa cazzo vuol dire questa affermazione (gen-fe ...)</a></li>
+              <li><a class="nav-link text-white" href="#">An Emily Winchester kind of mood
+                </a></li>
+              <li><a class="nav-link text-white" href="#">saggio vibes</a></li>
+              <li><a class="nav-link text-white" href="#">Giorgio Vanni</a></li>
+              <li><a class="nav-link text-white" href="#">Pippo hard-rock &#127928;</a></li>
+              <li><a class="nav-link text-white" href="#">Pluto Classic &#127929;</a></li>
+              <li><a class="nav-link text-white" href="#">honey and glass (nov-dic 2021)
+                </a></li>
+              <li><a class="nav-link text-white" href="#">minecraft e nintendo switch (sep-oct 2021)
+                </a></li>
+              <li><a class="nav-link text-white" href="#">2021 lol</a></li>
+              <li><a class="nav-link text-white" href="#">cosa cazzo vuol dire questa affermazione (gen-fe ...)</a></li>
+              <li><a class="nav-link text-white" href="#">An Emily Winchester kind of mood
+                </a></li>
+              <li><a class="nav-link text-white" href="#">Be The Young</a></li>
+              <li><a class="nav-link text-white" href="#">Francesco Guccini Mix</a></li>
+              <li><a class="nav-link text-white" href="#">silvano d'orba? I hardly know her (lug - ago 2021)
+              <li><a class="nav-link text-white" href="#">early stage emily syndrome (sett-ott 2022)</a></li>
+              <li><a class="nav-link text-white" href="#">silvano d'orba? I hardly know her (lug - ago 2021)</a></li>
+              <li><a class="nav-link text-white" href="#">landing page (mar-apr 2022)
+                </a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col text-center">
+          <div class="container-fluid p-0 m-0">
+            <div class="row">
+
+              <!-- INIZIO MIO LAVORO -->
+
+              <div>
+
+                <!-- INIZIO PARTE SUPERIORE CHE SCOMPARE -->
+
+                <div class="d-none d-lg-block">
+
+                  <!-- INIZIO MINI-NAV -->
+
+
+
+                  <div class="d-none d-lg-flex justify-content-evenly pt-2 fixed-top">
+                    <div class="d-flex gap-2">
+                        <div class="text-secondary rounded-circle bg-black fs-5 navArrows"><i class="bi bi-chevron-left"></i>
+                        </div>
+                        <div class="text-secondary rounded-circle bg-black fs-5 navArrows"><i class="bi bi-chevron-right"></i></div>
+                    </div>
+                    <div id="avatarContainer" class="dropdown rounded-pill bg-black d-flex align-items-start">
+                        <img src="assets/imgs/main/image-1.jpg" id="avatarTop" class="rounded-circle p-1" alt="avatar">
+                        <button class="btn btn-black rounded-pill dropdown-toggle fw-bold text-white" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Lidia Nautilus...
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Apri Chat GPT</a></li>
+                            <li><a class="dropdown-item" href="#">Fatti fare i compiti</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                  <!-- FINE MINI-NAV -->
+
+                  <!-- INIZIO ADV -->
+
+                  <div class="card my-4" id="box-ADV">
+                    <div class="row mt-5">
+                      <div class="col-3">
+                        <img src="/assets/imgs/main/image-1.jpg" class="img-fluid p-3" alt="...">
+                      </div>
+                      <div class="col-6 align-self-center text-start">
+                        <div class="">
+                          <p class="card-title ">ALBUM</p>
+                          <p class="card-text fs-1 fw-bold">TITOLO CANZONE</p>
+                          <p class="card-text">ascolta il nuovo singolo di
+                            Artisti</p>
+                          <div class="d-flex">
+                            <button type="button"
+                              class="btn btn-success rounded-pill w-25 m-2 fw-semibold">Play</button>
+                            <button type="button"
+                              class="btn btn-outline-light rounded-pill w-25 m-2 fw-semibold">Salva</button>
+                            <i class="bi bi-three-dots fs-1 ms-4"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <button type="button" class="btn btn-dark rounded-pill text-secondary fw-semibold m-2 float-end"
+                          id="btn-nascondiADV">NASCONDI
+                          ANNUNCI</button>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- FINE ADV -->
+
+                </div>
+
+                <!-- FINE PARTE SUPERIORE CHE SCOMPARE -->
+
+                <!-- INIZIO TUE PLAYLIST -->
+
+                <div>
+                  <div class="d-flex justify-content-between my-3">
+                    <h2 class="fw-semibold fs-1 fw-bolder">Buonasera</h2>
+                    <div class="d-flex d-lg-none ">
+                      <i class="bi bi-bell me-4"></i>
+                      <i class="bi bi-clock-history me-4"></i>
+                      <i class="bi bi-gear "></i>
+                    </div>
+                  </div>
+
+                  <div class="d-lg-none my-3">
+                    <button class="btn btn-dark rounded-pill m-2 fw-semibold" id="btn-tagPLAYLIST1">Music</button>
+                    <button class="btn btn-dark rounded-pill m-2 fw-semibold" id="btn-tagPLAYLIST2">Podcast e
+                      show</button>
+                  </div>
+
+                  <div class="d-flex row justify-content-evenly">
+
+                    <div class="card col-5 col-lg-3 m-2" id="box-PLAYLIST">
+                      <div class="row row-cols-2 ">
+                        <div class="col-lg-3">
+                          <div class="row row-cols-2 ">
+                            <img src="/assets/imgs/main/image-12.jpg" class="img-fluid p-0 m-0 img-Iniziale" alt="...">
+                            <img src="/assets/imgs/main/image-11.jpg" class="img-fluid p-0 m-0" alt="...">
+                            <img src="/assets/imgs/main/image-11.jpg" class="img-fluid p-0 m-0 img-Finale" alt="...">
+                            <img src="/assets/imgs/main/image-12.jpg" class="img-fluid p-0 m-0 " alt="...">
+                          </div>
+                        </div>
+                        <div class="align-self-center">
+                          <p class="card-title  text-descrizionePLAYLIST">boia DEH
+                          <p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card card col-5 col-lg-3 m-2" id="box-PLAYLIST">
+                      <div class="row row-cols-2">
+                        <div class="col-lg-3">
+                          <div class="row row-cols-2">
+                            <img src="/assets/imgs/main/image-12.jpg" class="img-fluid p-0 m-0 img-Iniziale" alt="...">
+                            <img src="/assets/imgs/main/image-11.jpg" class="img-fluid p-0 m-0" alt="...">
+                            <img src="/assets/imgs/main/image-11.jpg" class="img-fluid p-0 m-0 img-Finale" alt="...">
+                            <img src="/assets/imgs/main/image-12.jpg" class="img-fluid p-0 m-0 " alt="...">
+                          </div>
+                        </div>
+                        <div class="align-self-center">
+                          <p class="card-title text-descrizionePLAYLIST">
+                            lista canzoni da non riascoltare
+                          <p>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="card card col-5 col-lg-3 m-2" id="box-PLAYLIST">
+                      <div class="row row-cols-2">
+                        <div class="col-lg-3">
+                          <div class="row row-cols-2">
+                            <img src="/assets/imgs/main/image-12.jpg" class="img-fluid p-0 m-0 img-Iniziale" alt="...">
+                            <img src="/assets/imgs/main/image-11.jpg" class="img-fluid p-0 m-0" alt="...">
+                            <img src="/assets/imgs/main/image-11.jpg" class="img-fluid p-0 m-0 img-Finale" alt="...">
+                            <img src="/assets/imgs/main/image-12.jpg" class="img-fluid p-0 m-0 " alt="...">
+                          </div>
+                        </div>
+                        <div class="align-self-center">
+                          <p class="card-title text-descrizionePLAYLIST">
+                            odio i Negroamaro
+                          <p>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="card card col-5 col-lg-3 m-2" id="box-PLAYLIST">
+                      <div class="row row-cols-2">
+                        <div class="col-lg-3">
+                          <div class="row row-cols-2">
+                            <img src="/assets/imgs/main/image-12.jpg" class="img-fluid p-0 m-0 img-Iniziale" alt="...">
+                            <img src="/assets/imgs/main/image-11.jpg" class="img-fluid p-0 m-0" alt="...">
+                            <img src="/assets/imgs/main/image-11.jpg" class="img-fluid p-0 m-0 img-Finale" alt="...">
+                            <img src="/assets/imgs/main/image-12.jpg" class="img-fluid p-0 m-0 " alt="...">
+                          </div>
+                        </div>
+                        <div class="align-self-center">
+                          <p class="card-title text-descrizionePLAYLIST">
+                            titolo divertente
+                          <p>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="card card col-5 col-lg-3 m-2" id="box-PLAYLIST">
+                      <div class="row row-cols-2">
+                        <div class="col-lg-3">
+                          <div class="row row-cols-2">
+                            <img src="/assets/imgs/main/image-12.jpg" class="img-fluid p-0 m-0 img-Iniziale" alt="...">
+                            <img src="/assets/imgs/main/image-11.jpg" class="img-fluid p-0 m-0" alt="...">
+                            <img src="/assets/imgs/main/image-11.jpg" class="img-fluid p-0 m-0 img-Finale" alt="...">
+                            <img src="/assets/imgs/main/image-12.jpg" class="img-fluid p-0 m-0 " alt="...">
+                          </div>
+                        </div>
+                        <div class="align-self-center">
+                          <p class="card-title text-descrizionePLAYLIST">
+                            bangla vibe
+                          <p>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="card col-5 col-lg-3 m-2" id="box-PLAYLIST">
+                      <div class="row row-cols-2">
+                        <div class="col-lg-3">
+                          <div class="row row-cols-2 ">
+                            <img src="/assets/imgs/main/image-12.jpg" class="img-fluid p-0 m-0 img-Iniziale" alt="...">
+                            <img src="/assets/imgs/main/image-11.jpg" class="img-fluid p-0 m-0" alt="...">
+                            <img src="/assets/imgs/main/image-11.jpg" class="img-fluid p-0 m-0 img-Finale" alt="...">
+                            <img src="/assets/imgs/main/image-12.jpg" class="img-fluid p-0 m-0 " alt="...">
+                          </div>
+                        </div>
+                        <div class="align-self-center">
+                          <p class="card-title text-descrizionePLAYLIST">
+                            titolo lungo per testare i titoli lunghi hai capito?
+                          <p>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- FINE TUE PLAYLIST -->
+
+                <!-- INIZIO MENU CONSIGLI -->
+
+                <div>
+                  <div class="d-flex justify-content-between my-3">
+                    <h2>Altro che ti piace</h2>
+                    <P>VISUALIZZA TUTTO</P>
+                  </div>
+                </div>
+
+                <!-- FINE MENU CONSIGLI -->
+
+                <!-- INIZIO CARTE CONSIGLI -->
+
+                <div class="d-flex row row-cols-lg-5 justify-content-evenly">
+
+                  <div class="card rounded col-lg-3 my-3 box-CONSIGLI">
+                    <div>
+                      <div class="d-flex flex-lg-column">
+                        <div class="justify-content-center p-2">
+                          <img src="/assets/imgs/main/image-12.jpg" class="img-fluid img-CONSIGLI" alt="...">
+                        </div>
+                        <div class="col mt-1">
+                          <div class="mx-2">
+                            <p class="card-title d-lg-none">Playlist</p>
+                            <p class="card-text fs-4 fw-bold ">dio è un grandissimo</p>
+                            <p class="card-text fs-4 d-none d-lg-block">descrizione succulenta</p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-between m-2">
+                        <div>
+                          <i class=" fs-4 bi-suit-heart-fill me-3"></i>
+                          <i class=" fs-4 bi bi-three-dots-vertical"></i>
+                        </div>
+                        <div>
+                          16 brani
+                          <i class=" fs-4 bi bi-play-circle-fill p-2"></i>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="card rounded col-lg-3 my-3 box-CONSIGLI">
+                    <div>
+                      <div class="d-flex flex-lg-column">
+                        <div class="justify-content-center p-2">
+                          <img src="/assets/imgs/main/image-12.jpg" class="img-fluid img-CONSIGLI" alt="...">
+                        </div>
+                        <div class="col mt-1">
+                          <div class="mx-2">
+                            <p class="card-title d-lg-none">Playlist</p>
+                            <p class="card-text fs-4 fw-bold ">dio è un grandissimo</p>
+                            <p class="card-text fs-4 d-none d-lg-block">descrizione succulenta</p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-between m-2">
+                        <div>
+                          <i class=" fs-4 bi-suit-heart-fill me-3"></i>
+                          <i class=" fs-4 bi bi-three-dots-vertical"></i>
+                        </div>
+                        <div>
+                          16 brani
+                          <i class=" fs-4 bi bi-play-circle-fill p-2"></i>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="card rounded col-lg-3 my-3 box-CONSIGLI">
+                    <div>
+                      <div class="d-flex flex-lg-column">
+                        <div class="justify-content-center p-2">
+                          <img src="/assets/imgs/main/image-12.jpg" class="img-fluid img-CONSIGLI" alt="...">
+                        </div>
+                        <div class="col mt-1">
+                          <div class="mx-2">
+                            <p class="card-title d-lg-none">Playlist</p>
+                            <p class="card-text fs-4 fw-bold ">dio è un grandissimo</p>
+                            <p class="card-text fs-4 d-none d-lg-block">descrizione succulenta</p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-between m-2">
+                        <div>
+                          <i class=" fs-4 bi-suit-heart-fill me-3"></i>
+                          <i class=" fs-4 bi bi-three-dots-vertical"></i>
+                        </div>
+                        <div>
+                          16 brani
+                          <i class=" fs-4 bi bi-play-circle-fill p-2"></i>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="card rounded col-lg-3 my-3 box-CONSIGLI">
+                    <div>
+                      <div class="d-flex flex-lg-column">
+                        <div class="justify-content-center p-2">
+                          <img src="/assets/imgs/main/image-12.jpg" class="img-fluid img-CONSIGLI" alt="...">
+                        </div>
+                        <div class="col mt-1">
+                          <div class="mx-2">
+                            <p class="card-title d-lg-none">Playlist</p>
+                            <p class="card-text fs-4 fw-bold ">dio è un grandissimo</p>
+                            <p class="card-text fs-4 d-none d-lg-block">descrizione succulenta</p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-between m-2">
+                        <div>
+                          <i class=" fs-4 bi-suit-heart-fill me-3"></i>
+                          <i class=" fs-4 bi bi-three-dots-vertical"></i>
+                        </div>
+                        <div>
+                          16 brani
+                          <i class=" fs-4 bi bi-play-circle-fill p-2"></i>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <!-- FINE CARTE CONSIGLI -->
+
+              </div>
+
+              <!-- FINE MIO LAVORO -->
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-none d-lg-block bg-black">
+          <div class="row align-items-center my-5">
+            <div class="col-8">
+              <p class="fs-5 p-2 m-0 text-white fw-bold">Attività amici</p>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+              <div><i class="bi bi-person-plus text-white fs-4 p-2"></i></div>
+              <div><i class="bi bi-x-lg text-white fs-5"></i></div>
+            </div>
+          </div>
+          <div class="row my-4">
+            <div class="col-2">
+              <img src="assets/imgs/amici/profilo1.jpg" class="profile card-img-fluid rounded-circle" alt="Gesù">
+            </div>
+            <div class="col-8">
+              <p class="text-white"><strong>Jesus of Nazareth</strong></p>
+              <p class="text-white">La passione di Cristo &#8729; Mel Gibson</p>
+              <i class="bi bi-record-circle text-white">
+                <p class="d-inline px-2">EP I</p>
+              </i>
+            </div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row my-4">
+            <div class="col-2">
+              <img src="assets/imgs/amici/profilo2.jpg" class="profile card-img-fluid rounded-circle" alt="Gesù">
+            </div>
+            <div class="col-8">
+              <p class="text-white"><strong>SS. Maria</strong></p>
+              <p class="text-white">Ave Maria &#8729; Schubert</p>
+              <i class="bi bi-music-note-beamed text-white">
+                <p class="d-inline px-2">EP II</p>
+              </i>
+            </div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row my-4">
+            <div class="col-2">
+              <img src="assets/imgs/amici/profilo3.jpg" class="profile card-img-fluid rounded-circle" alt="Gesù">
+            </div>
+            <div class="col-8">
+              <p class="text-white"><strong>Pio from Pietrelcina</strong></p>
+              <p class="text-white">Padre Pio, tu che ora sei con Dio &#8729; Michele Zecchino</p>
+              <i class="bi bi-music-note-beamed text-white">
+                <p class="d-inline px-2">Inno Ventesimo</p>
+              </i>
+            </div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer id="player" class="d-none d-lg-flex align-items-center justify-content-between px-3">
+    <div class="d-flex align-items-center">
+      <div>
+        <img src="assets/imgs/main/image-1.jpg" alt="" style="width: 50px; height: auto;">
+      </div>
+      <div>
+        <p class="px-3 text-white m-0"><strong>Fat Funny Friends</strong></p>
+        <p class="px-3 text-white m-0">Maddie Zahm</p>
+      </div>
+      <div><i class="bi bi-heart text-white px-3 fs-5"></i></div>
+
+    </div>
+    <div class="d-flex flex-column" style="width: 40%;">
+      <div class="d-flex align-items-center justify-content-center justify-content-center">
+        <i class="bi bi-shuffle text-success fs-4 px-2"></i>
+        <i class="bi bi-skip-start-fill text-white fs-4 px-2"></i>
+        <i class="bi bi-play-circle-fill text-white fs-3 px-2"></i>
+        <i class="bi bi-skip-end-fill text-white fs-4 px-2"></i>
+        <i class="bi bi-repeat text-success fs-4 px-2"></i>
+      </div>
+
+      <div class="progressBar d-flex align-items-center">
+        <p class="text-white px-3 m-0">0:58</p>
+        <div class="progress w-100 rounded-pill" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+          aria-valuemin="0" aria-valuemax="100" style="height: 5px; background-color: #5E5E5E;">
+          <div class="progress-bar rounded-pill" style="width: 25%; background-color: white;"></div>
+        </div>
+        <p class="text-white px-3 m-0">3:20</p>
+      </div>
+    </div>
+    <div class="d-flex align-items-center" style="width: 15%;">
+      <i class="bi bi-mic fs-5 px-2" style="color:#A8A8A8;"></i>
+      <i class="bi bi-view-list fs-5 px-2" style="color:#A8A8A8;"></i>
+      <i class="bi bi-pc-display fs-5 px-2" style="color:#A8A8A8;"></i>
+      <div class="progressBar d-flex align-items-center">
+        <i class="bi bi-volume-up fs-4 px-2" style="color:#A8A8A8;"></i>
+        <div class="progress w-100 rounded-pill" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+          aria-valuemin="0" aria-valuemax="100" style="height: 5px; background-color:#A8A8A8;">
+          <div class="progress-bar rounded-pill" style="width: 100%; background-color: white;"></div>
+        </div>
+      </div>
+      <i class="bi bi-arrows-angle-expand text-white fs-5 px-2"></i>
+    </div>
+  </footer>
+
+  <nav id="navMobile" class="navbar fixed-bottom d-lg-none p-3">
+    <div class="container-fluid d-flex justify-content-evenly">
+      <div class="d-flex align-items-center">
+        <i class="bi bi-house-door-fill text-white text-center"><a class="nav-link text-white fs-6"
+            href="#">Home</a></i>
+      </div>
+
+      <i class="bi bi-search text-white text-center"><a class="nav-link text-white fs-6" href="#">Cerca</a></i>
+      <i class="bi bi-music-note-list text-white text-center"><a class="nav-link text-white fs-6" href="#">La tua
+          libreria</a></i>
+    </div>
+  </nav>
+
+  <nav id="playerMobile" class="navbar fixed-bottom d-flex d-lg-none align-items-center rounded-3 mx-3"
+    style="background-color: #262626;">
+    <div class="container-fluid d-flex justify-content-evenly">
+      <div class="d-flex align-items-center">
+        <p class="text-white m-0">Supernatural parody by The Hillywoo</p>
+        <i class="bi bi-pc-display text-white px-3"></i>
+        <i class="bi bi-heart text-white èx-3"></i>
+        <i class="bi bi-play-fill text-white px-3 fs-1"></i></i>
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
