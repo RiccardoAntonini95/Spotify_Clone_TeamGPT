@@ -13,6 +13,8 @@ fetch(urlDinamico, {
 })
     .then(response => response.json())
     .then(data => console.log(data))
+
+    
 //ora devo caricare la pagina con innerHTML di Marco parte sopra in un template, la lista di tracce in un ciclo
 
 

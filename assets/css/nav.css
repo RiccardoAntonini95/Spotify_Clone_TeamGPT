@@ -11,7 +11,7 @@ body {
 }
 
 /* LEFT SIDEBAR */
-main div.col-3 {
+#barra-sinistra {
   background-color: black;
 }
 #like i {
