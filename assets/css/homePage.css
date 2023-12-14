@@ -1,3 +1,8 @@
+body {
+    background-color: #121212;
+    color: white;
+}
+
 #box-ADV {
     color: white;
     background: linear-gradient(203deg, rgba(21, 21, 21, 0.2) 53%, rgba(0, 0, 0, 1) 100%);
@@ -19,7 +24,7 @@
 }
 
 #btn-tagPLAYLIST1 {
-    background-color: #2222223a;
+    background-color: #a918183a;
     border: none;
 }
 
