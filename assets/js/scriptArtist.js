@@ -39,6 +39,13 @@ if (artistId) {
 
 
 
+
+
+
+
+
+
+
 //fetch del localstorage
 /* fetch(urlDinamico, {
     method: 'GET',
