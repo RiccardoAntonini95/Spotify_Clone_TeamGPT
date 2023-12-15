@@ -1,12 +1,16 @@
- #sezioneDue{
+#sezioneDue{
   background: linear-gradient(to bottom, rgb(61, 61, 61), #121212);}
 .titleArtist{
   padding-bottom: 35px;
+  font-size: 5rem;
 }
 #titoloh{
-  font-size: 30px;
+  font-size: 2rem;
   margin: 16px;
   color: whitesmoke;
+}
+#almblist h2:first-child{
+  font-size: 2rem;
 }
 #verificato{
   color: #0089fa;
