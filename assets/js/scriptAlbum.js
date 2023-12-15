@@ -22,6 +22,7 @@ fetch(urlAlbum, {
         const numTracks = data.nb_tracks
         const durationAlbum = data.duration 
         const artistPic = data.artist.picture
+        const artistId = data.artist.id
 
         const templateStatic = `
         <div class="border border-white py-4"> <!--  la pagina album -->
@@ -33,10 +34,10 @@ fetch(urlAlbum, {
       <p class="d-none d-lg-block text-white fw-bold align-self-end mb-0 w-100">ALBUM</p>
       <p class="display-4 text-white fw-bold">${albumName}</p>
       <div class="d-flex text-white gap-1 align-self-end">
-        <a href=""><img src="${artistPic}" width="25" id="fotoArtista" class="rounded-circle"
+        <a href="./artist-page.html?id=${artistId}&nameArtist=${artistName}"><img src="${artistPic}" width="25" id="fotoArtista" class="rounded-circle"
           alt="foto-artista"></a>
         <div class="d-flex gap-1">
-          <p class="fw-bold">${artistName}</p>
+          <a href="./artist-page.html?id=${artistId}&nameArtist=${artistName}"><p class="fw-bold">${artistName}</p></a>
           <p class="d-none d-lg-inline">&#8729;</p>
           <p class="d-none d-lg-inline">${releaseDate}</p>
           <p class="d-none d-lg-inline">&#8729;</p>
@@ -99,13 +100,14 @@ fetch(urlAlbum, {
         const artistTrack = arrayTracks[i].artist.name
         const riprodTrack = arrayTracks[i].rank
         const durationTrack = arrayTracks[i].duration
+        const artistIdFor = arrayTracks[i].artist.id
 
         const templateDinamic = `
         <div class="d-lg-none"> 
         <div class="row justify-content-between px-3">
           <div class="col text-start">
             <p class="m-0 text-white">${titleTrack}</p>
-            <p class="m-0 text-secondary">${artistTrack}</p>
+            <a href="./artist-page.html?id=${artistIdFor}&nameArtist=${artistTrack}"><p class="m-0 text-secondary">${artistTrack}</p></a>
           </div>
           <div class="col text-end">
             <i class="fs-1 bi bi-three-dots-vertical text-secondary"></i>
@@ -119,7 +121,7 @@ fetch(urlAlbum, {
           <div class="col-6 text-start text-white">
             <div>
               <p class="m-0">${titleTrack}</p>
-              <p class="m-0 text-secondary">${artistTrack}</p>
+              <a href="./artist-page.html?id=${artistIdFor}&nameArtist=${artistTrack}"><p class="m-0 text-secondary">${artistTrack}</p></a>
             </div>
           </div>
           <div class="col-4 text-white">
