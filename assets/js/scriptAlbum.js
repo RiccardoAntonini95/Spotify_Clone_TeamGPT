@@ -25,7 +25,7 @@ fetch(urlAlbum, {
         const artistId = data.artist.id
 
         const templateStatic = `
-        <div class="border border-white py-4"> <!--  la pagina album -->
+        <div class="py-4"> <!--  la pagina album -->
   <div class="d-lg-flex flex-column flex-lg-row">
     <div class="px-4">
       <img src="${albumPic}" id="fotoAlbum" class="img-fluid" alt="foto-album">
@@ -50,7 +50,7 @@ fetch(urlAlbum, {
       </div>
     </div>
   </div>
-  <div class="border border-warning"> <!-- contenitore barra play statica -->
+  <div> <!-- contenitore barra play statica -->
     <div
       class="d-flex gap-4 justify-content-between justify-content-lg-start align-items-center px-4 d-lg-flex">
       <div class="d-flex gap-4 order-lg-2">
@@ -65,20 +65,21 @@ fetch(urlAlbum, {
     </div>
 
     <div class="container text-center d-none d-lg-block">
-      <div class="row border-bottom text-secondary">
-        <div class="col-1">
-          #
-        </div>
-        <div class="col-6 text-start">
-          TITOLO
-        </div>
-        <div class="col-4">
-          RIPRODUZIONI
-        </div>
-        <div class="col-1">
-          <i class="bi bi-clock"></i>
-        </div>
+      <div class="row text-secondary">
+      <div class="col-1">
+      #
       </div>
+      <div class="col-6 text-start">
+      TITOLO
+      </div>
+      <div class="col-4">
+      RIPRODUZIONI
+      </div>
+      <div class="col-1">
+      <i class="bi bi-clock"></i>
+      </div>
+      </div>
+      <hr style="opacity: 0.5">
     </div>
   </div>  <!-- questo div bordo giallo -->
   <div class="text-center">

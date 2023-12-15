@@ -43,7 +43,6 @@ fetch(urlQueen, {
                           <i class=" bi-suit-heart-fill me-3 icon-change icon-riduzioneIngrandimento"></i>
                           <i class=" bi bi-three-dots-vertical icon-change icon-riduzioneIngrandimento"></i>
                         </div>
-                          <p class="icon-riduzioneIngrandimento1 align-self-center">16 brani</p>
                           <i class=" bi bi-play-circle-fill icon-change img-fluid icon-riduzioneIngrandimento "></i>
                       </div>
            </div>
