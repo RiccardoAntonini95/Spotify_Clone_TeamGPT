@@ -1,77 +1,54 @@
 @media screen and (max-width: 992px) {
-  .playsolder {
-    display: flex;
-    width: 85%;
-    margin: auto;
-    color: white;
-    background-color: black;
-  }
 
-  .playsolder svg {
-    margin-top: 12px;
-    font-size: 1.5rem;
-    color: white;
-    border: none;
+  .playsolder {
+      display: flex;
+      width: 85%;
+      margin: auto;
+      color: white;
+      background-color: #1B1B1B
   }
 
   .playsolder input {
-    flex: 1;
-    border: none;
-    padding: 10px;
-    background-color: black;
-    color: white;
+      flex: 1;
+      border: none;
+      padding: 10px;
+      background-color: #1B1B1B;
+      color: white;
   } /*  da cambiare il bordo bianco outline input */
-
-  #searchBar {
-    flex: 1;
-    border: none;
-    padding: 10px;
-    background-color: black;
-    color: white;
+  h2{
+      color: white;
+      text-align: center;
   }
+  input:focus {
+      outline: red;
+  }
+
 }
 
-@media screen and (min-width: 992px) {
-  .uno {
-    display: none;
-    color: white;
-    padding-bottom: 20px;
-    margin-left: 5px;
-    font-size: 3em;
-  }
-
+@media screen and (min-width: 992px) { 
   #conteiner {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .fr {
-    display: flex;
+      display: flex;
+      justify-content: space-between;
   }
 
   .playsolder {
-    display: flex;
-    width: 85%;
-    margin: auto;
-    background-color: black;
+      display: flex;
+      width: 85%;
+      margin: auto;
+      background-color: #1B1B1B;
+      margin-top: 5px;
+      width: 20rem;
+      color: aliceblue;
+      border: none;
   }
 
-  .playsolder svg {
-    margin-top: 12px;
-    font-size: 1.5rem;
-    color: white;
+  h2 {
+      color: white;
+      text-align: left;
+      margin: 7rem 0rem 0rem 5rem;
   }
-
-  .playsolder input {
-    flex: 1;
-    border: none;
-    padding: 10px;
-    background-color: black;
-    color: white;
-  }
-
   input:focus {
-    outline: red;
+      outline: red;
   }
 }
 
@@ -79,26 +56,34 @@
   position: relative;
   background-color: aqua;
   overflow: hidden;
-  margin-bottom: 6px;
-  height: 170px;
-  margin-right: 6px;
-  margin-left: 14px;
+  height: 150px;
+  margin: 0.6rem;
 }
-.prova {
-  position: absolute;
-  bottom: 0;
-  right: -20%;
-  width: 50%;
-  transform: rotate(25deg);
+.prova{
+      position: absolute;
+      bottom: 0;
+      right: -20%;
+      width: 50%;
+      transform: rotate(25deg);
+      z-index: 0;
 }
 
-h3 {
+h3{
   color: aliceblue;
-  z-index: 100;
+  z-index: 1;
+  padding: 1rem 0rem 0rem 0.8rem;
 }
 
-h2 {
-  color: white;
+#search-contenitore {
+  background-color: #1B1B1B;
+}
+
+#button-leftRight{
+  margin-left: 25rem;
+}
+
+#avatarContainer {
+  margin-right: 30rem;
 }
 .search-page-scroll {
   height: 85vh;

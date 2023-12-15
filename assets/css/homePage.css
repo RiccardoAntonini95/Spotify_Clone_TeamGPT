@@ -1,59 +1,185 @@
+/*GENERALI*/
 body {
-    background-color: #121212;
     color: white;
-}
-
-#box-ADV {
-    color: white;
-    background: linear-gradient(203deg, rgba(21, 21, 21, 0.2) 53%, rgba(0, 0, 0, 1) 100%);
+  }
+  
+  .img-Arrotondata {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .text-NODECORATION {
+    color: white !important;
+  }
+  
+  .cursore-puntatore:hover {
+    cursor: pointer;
+  }
+  
+  .text-interaction1:hover {
+    text-decoration: underline;
+    transform: scale(1.02)
+  }
+  
+  .text-interaction2:hover {
+    color: rgba(255, 255, 255, 0.897);
+    transform: scale(1.002);
+    transition-duration: 0ms;
+  }
+  
+  .img-scale:hover {
+    transform: scale(1.009);
+  }
+  
+  /*SEZIONE ADV*/
+  #box-ADV {
+    background: linear-gradient(
+      203deg,
+      rgba(21, 21, 21, 0.2) 53%,
+      rgba(0, 0, 0, 1) 100%
+    );
     border: none;
-}
-
-#titolo-ADV {
+  }
+  
+  #titolo-ADV {
     font-size: 3rem;
-}
-
-#btn-nascondiADV {
+  }
+  
+  #text-artistiADV:hover {
+    font-size: 1.02rem;
+    text-decoration: underline !important;
+  }
+  
+  #btn-nascondiADV {
     background-color: #2222223a;
     border: none;
-}
-
-.box-PLAYLIST {
-    color: antiquewhite;
-    background-color: #2D2D2D;
-}
-
-#btn-tagPLAYLIST1 {
-    background-color: #a918183a;
+  }
+  
+  #btn-nascondiADV:hover {
+    background-color: #3131313a;
+  }
+  
+  /*SEZIONE PLAYLIST*/
+  .box-PLAYLIST {
+    background-color: #2d2d2d;
     border: none;
-}
-
-#btn-tagPLAYLIST2 {
-    background-color: #2222223a;
-    border: none;
-}
-
-.img-Iniziale {
-    border-top-left-radius: 6px;
-}
-
-.img-Finale {
-    border-bottom-left-radius: 6px;
-}
-
-.text-descrizionePLAYLIST {
+  }
+  
+  .box-PLAYLIST:hover {
+    background-color: #353535;
+  }
+  
+  .box-PLAYLIST p:hover {
+    text-decoration: underline;
+  }
+  
+  .text-descrizionePLAYLIST {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-.box-CONSIGLI {
-    color: antiquewhite;
-    background-color: #2D2D2D;
+    margin-top: 1rem;
+  }
+  
+  .cont-imgs {
+    box-shadow: 11px 2px 13px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  #btn-tag1 {
+    background-color: #2222223a;
+    border: none;
+    margin-left: 5rem;
+  }
+  
+  #btn-tag1:hover {
+    background-color: #22222276;
+    transform: scale(1.1);
+  }
+  
+  #btn-tag2 {
+    background-color: #2222223a;
+    border: none;
+  }
+  
+  #btn-tag2:hover {
+    background-color: #22222276;
+    transform: scale(1.1);
+  }
+  
+  /*SEZIONE CONSIGLIATI*/
+  #cambio-visualizza:hover {
+    color: rgba(255, 255, 255, 0.594);
+    text-decoration: underline;
+  }
+  
+  .box-CONSIGLI {
+    background-color: #2d2d2d;
     text-align: left;
-}
-
-.img-CONSIGLI {
-    border-radius: 6px;
-    
-}
+  }
+  
+  .box-CONSIGLI:hover {
+    background-color: #353535;
+  }
+  
+  .box-CONSIGLI h1:hover {
+    text-decoration: underline;
+  }
+  
+  .text-riduzioneIngrandimento:hover {
+    text-decoration: underline;
+  }
+  
+  .img-CONSIGLI {
+    border-radius: 8px;
+    box-shadow: 5px 5px 11px -2px rgba(0, 0, 0, 0.64);
+  }
+  
+  .icon-riduzioneIngrandimento1 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  
+  .icon-change:hover {
+    transform: scale(1.1);
+  }
+  
+  /*MEDIA QUERY*/
+  @media screen and (max-width: 992px) {
+    /*SEZIONE CONSIGLIATI MOBILE*/
+    .img-CONSIGLI {
+      width: 18rem;
+    }
+  
+    .text-riduzioneIngrandimento {
+      font-size: 1.3rem;
+      margin-left: 0.6rem;
+      color: rgba(255, 255, 255, 0.518);
+    }
+  
+    .title-riduzioneIngrandimento {
+      font-size: 2.5rem;
+    }
+  
+    .icon-riduzioneIngrandimento {
+      font-size: 3rem;
+      margin: 2rem 2rem 0.5rem 2rem;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    /*SEZIONE CONSIGLIATI DESKTOP*/
+    .text-riduzioneIngrandimento {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.518);
+    }
+  
+    .title-riduzioneIngrandimento {
+      font-size: 1.4rem;
+    }
+  
+    .box-CONSIGLI p,
+    h1 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }

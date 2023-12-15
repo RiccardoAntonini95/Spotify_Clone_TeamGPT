@@ -48,61 +48,74 @@ main div.col-3 {
 }
 
 /* TOPBAR */
-.navArrows{
+.navArrows {
   padding: 3px 6px;
 }
 
-#avatarContainer{
+#avatarContainer {
   position: relative;
   left: 10%;
 }
 
-#avatarTop{
+#avatarTop {
   height: 25px;
 }
 
 /* NAV MOBILE ONLY */
 #navMobile {
   font-size: 2em;
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(18,18,18,0) 95%);
-
+  background: linear-gradient(
+    0deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(18, 18, 18, 0.499124649859944) 100%
+  );
 }
 
 /* RIGHT SIDEBAR */
-.profile{
+.profile {
   width: 25px;
   height: 25px;
 }
 
 /* PLAYER BAR */
-#player{
+#player {
   position: fixed;
   width: 100%;
   height: 80px;
   bottom: 0px;
-  background-color:#181818;
+  background-color: #181818;
 }
-#playerMobile{
+#playerMobile {
   height: 60px;
   font-size: 1.5em;
   bottom: 9.5%;
-  background-color: #262626;
 }
-.progressBar{
+.progressBar {
   width: 100%;
 }
 
 /* PAGINA RICCARDO ALBUM */
 
-#fotoAlbum{
+#fotoAlbum {
   box-shadow: 0px 0px 20px -5px black;
 }
 
-#fotoArtista{
+#fotoArtista {
   height: fit-content;
 }
-@media screen and (min-width: 992px) {
-  .rotate-90{
-    transform: rotate(90deg);
-  }
+.search-page-scroll {
+  height: 85vh;
+  overflow-y: scroll;
+}
+.search-page-scroll::-webkit-scrollbar {
+  width: 8px;
+  margin: 5px 0;
+  height: 85vh;
+  overflow-y: scroll;
+}
+.search-page-scroll::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.search-page-scroll::-webkit-scrollbar-thumb {
+  background-color: #4d4d4d;
 }

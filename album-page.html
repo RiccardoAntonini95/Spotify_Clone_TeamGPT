@@ -21,9 +21,9 @@
             <div class="d-flex align-items-center"><i class="bi bi-three-dots text-white"></i><a
                 class="nav-link text-white" href="#"></a></div>
             <div class="d-flex align-items-center"><i class="bi bi-house-door text-white"></i><a
-                class="nav-link text-white" href="#">Home</a></div>
+                class="nav-link text-white" href="./home-page.html">Home</a></div>
             <div class="d-flex align-items-center"><i class="bi bi-search text-white"></i><a class="nav-link text-white"
-                href="#">Cerca</a></div>
+                href="./searchPage.html">Cerca</a></div>
             <div class="d-flex align-items-center"><i class="bi bi-music-note-list text-white"></i><a
                 class="nav-link text-white" href="#">La tua libreria</a></div>
           </nav>
@@ -42,13 +42,13 @@
               <li><a class="nav-link text-white" href="#">early stage emily syndrome (sett-ott 2022)</a></li>
               <li><a class="nav-link text-white" href="#">silvano d'orba? I hardly know her (lug - ago 2021)</a></li>
               <li><a class="nav-link text-white" href="#">landing page (mar-apr 2022)</a></li>
-                
+
               <li><a class="nav-link text-white" href="#">Dragon Ball &#128009;</a></li>
               <li><a class="nav-link text-white" href="#">Be The Young</a></li>
               <li><a class="nav-link text-white" href="#">Francesco Guccini Mix</a></li>
               <li><a class="nav-link text-white" href="#">silvano d'orba? I hardly know her (lug - ago 2021)</a></li>
               <li><a class="nav-link text-white" href="#">Culo 2021 &#127825; &#127825;</a></li>
-              
+
               <li><a class="nav-link text-white" href="#">honey and glass (nov-dic 2021)
                 </a></li>
               <li><a class="nav-link text-white" href="#">minecraft e nintendo switch (sep-oct 2021)
@@ -56,7 +56,7 @@
               <li><a class="nav-link text-white" href="#">2021 lol</a></li>
               <li><a class="nav-link text-white" href="#">cosa cazzo vuol dire questa affermazione (gen-fe ...)</a></li>
               <li><a class="nav-link text-white" href="#">An Emily Winchester kind of mood</a></li>
-                
+
               <li><a class="nav-link text-white" href="#">saggio vibes</a></li>
               <li><a class="nav-link text-white" href="#">Giorgio Vanni</a></li>
               <li><a class="nav-link text-white" href="#">Pippo hard-rock &#127928;</a></li>
@@ -68,7 +68,7 @@
               <li><a class="nav-link text-white" href="#">2021 lol</a></li>
               <li><a class="nav-link text-white" href="#">cosa cazzo vuol dire questa affermazione (gen-fe ...)</a></li>
               <li><a class="nav-link text-white" href="#">An Emily Winchester kind of mood</a></li>
-                
+
               <li><a class="nav-link text-white" href="#">Be The Young</a></li>
               <li><a class="nav-link text-white" href="#">Francesco Guccini Mix</a></li>
               <li><a class="nav-link text-white" href="#">silvano d'orba? I hardly know her (lug - ago 2021)</a></li>
@@ -82,26 +82,179 @@
         </div>
 
         <div class="col text-center">
-            <div class="d-none d-lg-flex justify-content-evenly pt-2 fixed-top">
-                <div class="d-flex gap-2">
-                    <div class="text-secondary rounded-circle bg-black fs-5 navArrows"><i class="bi bi-chevron-left"></i>
-                    </div>
-                    <div class="text-secondary rounded-circle bg-black fs-5 navArrows"><i class="bi bi-chevron-right"></i></div>
-                </div>
-                <div id="avatarContainer" class="dropdown rounded-pill bg-black d-flex align-items-start">
-                    <img src="assets/imgs/main/image-1.jpg" id="avatarTop" class="rounded-circle p-1" alt="avatar">
-                    <button class="btn btn-black rounded-pill dropdown-toggle fw-bold text-white" type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Lidia Nautilus...
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Apri Chat GPT</a></li>
-                        <li><a class="dropdown-item" href="#">Fatti fare i compiti</a></li>
-                    </ul>
-                </div>
+          <div class="d-none d-lg-flex justify-content-evenly pt-2 fixed-top">
+            <div class="d-flex gap-2">
+              <div class="text-secondary rounded-circle bg-black fs-5 navArrows"><i class="bi bi-chevron-left"></i>
+              </div>
+              <div class="text-secondary rounded-circle bg-black fs-5 navArrows"><i class="bi bi-chevron-right"></i>
+              </div>
             </div>
-          <div id="albumPage"></div> <!-- qua va la pagina album col JS di RICCARDO fai query selector-->
-        </div>
+            <div id="avatarContainer" class="dropdown rounded-pill bg-black d-flex align-items-start">
+              <img src="assets/imgs/main/image-1.jpg" id="avatarTop" class="rounded-circle p-1" alt="avatar">
+              <button class="btn btn-black rounded-pill dropdown-toggle fw-bold text-white" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Lidia Nautilus...
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Apri Chat GPT</a></li>
+                <li><a class="dropdown-item" href="#">Fatti fare i compiti</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="albumPage">
+            <div class="border border-white py-4"> <!--  la pagina album -->
+              <div class="d-lg-flex flex-column flex-lg-row">
+                <div class="px-4">
+                  <img src="assets/imgs/main/image-12.jpg" id="fotoAlbum" class="img-fluid" alt="foto-album">
+                </div>
+                <div class="px-4 d-lg-flex flex-wrap text-start pt-lg-5">
+                  <p class="d-none d-lg-block text-white fw-bold align-self-end mb-0 w-100">ALBUM</p>
+                  <p class="display-4 text-white fw-bold">Nome dell'album</p>
+                  <div class="d-flex text-white gap-1 align-self-end">
+                    <img src="assets/imgs/main/image-18.jpg" width="25" id="fotoArtista" class="rounded-circle"
+                      alt="foto-artista">
+                    <div class="d-flex gap-1">
+                      <p class="fw-bold">nome artista</p>
+                      <p class="d-none d-lg-inline">&#8729;</p>
+                      <p class="d-none d-lg-inline">2017</p>
+                      <p class="d-none d-lg-inline">&#8729;</p>
+                      <p class="fw-bold d-none d-lg-inline">12 brani</p>
+                      <p class="d-none d-lg-inline">durata album</p>
+                    </div>
+                  </div>
+                  <div class="d-lg-none text-secondary">
+                    <p>Album &#8729; 2017</p>
+                  </div>
+                </div>
+              </div>
+              <div class="border border-white"> <!-- contenitore barra play statica -->
+                <div
+                  class="d-flex gap-4 justify-content-between justify-content-lg-start align-items-center px-4 d-lg-flex">
+                  <div class="d-flex gap-4 order-lg-2">
+                    <i class="fs-1 bi bi-suit-heart text-white"></i> <!-- questo cambia colore marco ha css -->
+                    <i class="fs-1 bi bi-arrow-down-circle text-secondary"></i>
+                    <i class="fs-1 bi bi-three-dots-vertical rotate-90 text-secondary"></i>
+                  </div>
+                  <div class="d-flex gap-4">
+                    <i class="fs-1 bi bi-shuffle text-secondary d-lg-none p-2"></i>
+                    <i class="fs-1 bi bi-play-circle-fill p-2" id="btnPlay"></i>
+                  </div>
+                </div>
+                <div class="d-lg-none"> <!-- qua ciclo mobile -->
+                  <div class="row justify-content-between px-3">
+                    <div class="col text-start">
+                      <p class="m-0 text-white">titolo</p>
+                      <p class="m-0 text-secondary">artista</p>
+                    </div>
+                    <div class="col text-end">
+                      <i class="fs-1 bi bi-three-dots-vertical text-secondary"></i>
+                    </div>
+                  </div> <!-- qua fine ciclo mobile -->
+                  <div class="row justify-content-between px-3">
+                    <div class="col text-start">
+                      <p class="m-0 text-danger">titolo</p>
+                      <p class="m-0">artista</p>
+                    </div>
+                    <div class="col text-end">
+                      <i class="fs-1 bi bi-three-dots-vertical"></i>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between px-3">
+                    <div class="col text-start">
+                      <p class="m-0">titolo</p>
+                      <p class="m-0">artista</p>
+                    </div>
+                    <div class="col text-end">
+                      <i class="fs-1 bi bi-three-dots-vertical"></i>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between px-3">
+                    <div class="col text-start">
+                      <p class="m-0">titolo</p>
+                      <p class="m-0">artista</p>
+                    </div>
+                    <div class="col text-end">
+                      <i class="fs-1 bi bi-three-dots-vertical"></i>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between px-3">
+                    <div class="col text-start">
+                      <p class="m-0">titolo</p>
+                      <p class="m-0">artista</p>
+                    </div>
+                    <div class="col text-end">
+                      <i class="fs-1 bi bi-three-dots-vertical"></i>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between px-3">
+                    <div class="col text-start">
+                      <p class="m-0">titolo</p>
+                      <p class="m-0">artista</p>
+                    </div>
+                    <div class="col text-end">
+                      <i class="fs-1 bi bi-three-dots-vertical"></i>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between px-3">
+                    <div class="col text-start">
+                      <p class="m-0">titolo</p>
+                      <p class="m-0">artista</p>
+                    </div>
+                    <div class="col text-end">
+                      <i class="fs-1 bi bi-three-dots-vertical"></i>
+                    </div>
+                  </div>
+
+                  <div class="row justify-content-between px-3">
+                    <div class="col text-start">
+                      <p class="m-0">titolo</p>
+                      <p class="m-0">artista</p>
+                    </div>
+                    <div class="col text-end">
+                      <i class="fs-1 bi bi-three-dots-vertical"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container text-center d-none d-lg-block">
+                  <div class="row border-bottom text-secondary">
+                    <div class="col-1">
+                      #
+                    </div>
+                    <div class="col-6 text-start">
+                      TITOLO
+                    </div>
+                    <div class="col-4">
+                      RIPRODUZIONI
+                    </div>
+                    <div class="col-1">
+                      <i class="bi bi-clock"></i>
+                    </div>
+                  </div>
+                  <!--  da qua inizia ciclo -->
+                  <div class="row align-items-center">
+                    <div class="col-1 text-white">
+                      1 <!-- sostituisci con index del for -->
+                    </div>
+                    <div class="col-6 text-start text-white">
+                      <div>
+                        <p class="m-0">TITOLO</p>
+                        <p class="m-0 text-secondary">artista</p>
+                      </div>
+                    </div>
+                    <div class="col-4 text-white">
+                      numero a cazzo
+                    </div>
+                    <div class="col-1 text-white">
+                      minuti
+                    </div>
+                  </div>
+                  <!--  fine ciclo  -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- qua va la pagina album col JS di RICCARDO fai query selector-->
         <div class="col-2 d-none d-lg-block bg-black">
           <div class="row align-items-center my-5">
             <div class="col-8">
@@ -121,7 +274,7 @@
               <p class="text-white">La passione di Cristo &#8729; Mel Gibson</p>
               <i class="bi bi-record-circle text-white">
               </i>
-                <p class="d-inline px-2">EP I</p>
+              <p class="d-inline px-2">EP I</p>
             </div>
             <div class="col-2"></div>
           </div>
@@ -134,7 +287,7 @@
               <p class="text-white">Ave Maria &#8729; Schubert</p>
               <i class="bi bi-music-note-beamed text-white">
               </i>
-                <p class="d-inline px-2">EP II</p>
+              <p class="d-inline px-2">EP II</p>
             </div>
             <div class="col-2"></div>
           </div>
@@ -147,7 +300,7 @@
               <p class="text-white">Padre Pio, tu che ora sei con Dio &#8729; Michele Zecchino</p>
               <i class="bi bi-music-note-beamed text-white">
               </i>
-                <p class="d-inline px-2">Inno Ventesimo</p>
+              <p class="d-inline px-2">Inno Ventesimo</p>
             </div>
             <div class="col-2"></div>
           </div>
@@ -204,10 +357,11 @@
     <div class="container-fluid d-flex justify-content-evenly">
       <div class="d-flex align-items-center">
         <i class="bi bi-house-door-fill text-white text-center"><a class="nav-link text-white fs-6"
-            href="#">Home</a></i>
+            href="./home-page.html">Home</a></i>
       </div>
 
-      <i class="bi bi-search text-white text-center"><a class="nav-link text-white fs-6" href="#">Cerca</a></i>
+      <i class="bi bi-search text-white text-center"><a class="nav-link text-white fs-6"
+          href="./searchPage.html">Cerca</a></i>
       <i class="bi bi-music-note-list text-white text-center"><a class="nav-link text-white fs-6" href="#">La tua
           libreria</a></i>
     </div>

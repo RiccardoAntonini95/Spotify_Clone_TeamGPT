@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/circular-font.css">
   <link rel="stylesheet" href="assets/css/nav.css">
   <link rel="stylesheet" href="assets/css/gianluigi.css">
+  <script src="assets/js/script.js" defer></script>
   <title>Spotify Clone</title>
 </head>
 
@@ -17,12 +18,12 @@
   <main>
     <div class="container-fluid h-100">
       <div class="row h-100">
-        <div class="col-3 d-none d-lg-block">
+        <div class="col-3 d-none d-lg-block" id="barra-sinistra">
           <nav id="sideNav" class="nav d-lg flex-column p-2">
             <div class="d-flex align-items-center"><i class="bi bi-three-dots text-white"></i><a
                 class="nav-link text-white" href="#"></a></div>
             <div class="d-flex align-items-center"><i class="bi bi-house-door text-white"></i><a
-                class="nav-link text-white" href="#">Home</a></div>
+                class="nav-link text-white" href="./home-page.html">Home</a></div>
             <div class="d-flex align-items-center"><i class="bi bi-search text-white"></i><a class="nav-link text-white"
                 href="#">Cerca</a></div>
             <div class="d-flex align-items-center"><i class="bi bi-music-note-list text-white"></i><a
@@ -43,13 +44,13 @@
               <li><a class="nav-link text-white" href="#">early stage emily syndrome (sett-ott 2022)</a></li>
               <li><a class="nav-link text-white" href="#">silvano d'orba? I hardly know her (lug - ago 2021)</a></li>
               <li><a class="nav-link text-white" href="#">landing page (mar-apr 2022)</a></li>
-                
+
               <li><a class="nav-link text-white" href="#">Dragon Ball &#128009;</a></li>
               <li><a class="nav-link text-white" href="#">Be The Young</a></li>
               <li><a class="nav-link text-white" href="#">Francesco Guccini Mix</a></li>
               <li><a class="nav-link text-white" href="#">silvano d'orba? I hardly know her (lug - ago 2021)</a></li>
               <li><a class="nav-link text-white" href="#">Culo 2021 &#127825; &#127825;</a></li>
-              
+
               <li><a class="nav-link text-white" href="#">honey and glass (nov-dic 2021)
                 </a></li>
               <li><a class="nav-link text-white" href="#">minecraft e nintendo switch (sep-oct 2021)
@@ -57,7 +58,7 @@
               <li><a class="nav-link text-white" href="#">2021 lol</a></li>
               <li><a class="nav-link text-white" href="#">cosa cazzo vuol dire questa affermazione (gen-fe ...)</a></li>
               <li><a class="nav-link text-white" href="#">An Emily Winchester kind of mood</a></li>
-                
+
               <li><a class="nav-link text-white" href="#">saggio vibes</a></li>
               <li><a class="nav-link text-white" href="#">Giorgio Vanni</a></li>
               <li><a class="nav-link text-white" href="#">Pippo hard-rock &#127928;</a></li>
@@ -69,7 +70,7 @@
               <li><a class="nav-link text-white" href="#">2021 lol</a></li>
               <li><a class="nav-link text-white" href="#">cosa cazzo vuol dire questa affermazione (gen-fe ...)</a></li>
               <li><a class="nav-link text-white" href="#">An Emily Winchester kind of mood</a></li>
-                
+
               <li><a class="nav-link text-white" href="#">Be The Young</a></li>
               <li><a class="nav-link text-white" href="#">Francesco Guccini Mix</a></li>
               <li><a class="nav-link text-white" href="#">silvano d'orba? I hardly know her (lug - ago 2021)</a></li>
@@ -82,204 +83,198 @@
           </div>
         </div>
 
-        <div class="col text-center">
-            <div class="d-none d-lg-flex justify-content-evenly pt-2 fixed-top">
-                <div class="d-flex gap-2">
-                    <div class="text-secondary rounded-circle bg-black fs-5 navArrows"><i class="bi bi-chevron-left"></i>
-                    </div>
-                    <div class="text-secondary rounded-circle bg-black fs-5 navArrows"><i class="bi bi-chevron-right"></i></div>
-                </div>
-<!--                  <div class="playsolder d-none d-lg-inline mb-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                      viewBox="0 0 16 16">
-                      <path
-                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                  </svg>
-                  <input type="text" id="searchBar" placeholder="Cosa vuoi ascoltare?">
-              </div>  --> <!-- QUESTA VA AGGIUSTATA NELLA NAV VA IL SEARCH -->
-                <div id="avatarContainer" class="dropdown rounded-pill bg-black d-flex align-items-start">
-                    <img src="assets/imgs/main/image-1.jpg" id="avatarTop" class="rounded-circle p-1" alt="avatar">
-                    <button class="btn btn-black rounded-pill dropdown-toggle fw-bold text-white" type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Lidia Nautilus...
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Apri Chat GPT</a></li>
-                        <li><a class="dropdown-item" href="#">Fatti fare i compiti</a></li>
-                    </ul>
-                </div>
+        <div class="col">
+          <div class="d-none d-lg-flex justify-content-evenly pt-4 fixed-top ms-5">
+            <div class="d-flex" id="button-leftRight">
+              <i class="bi bi-chevron-left text-secondary rounded-circle bg-black fs-3 navArrows me-2"></i>
+              <i class="bi bi-chevron-right text-secondary rounded-circle bg-black fs-3 navArrows"></i>
+
+              <div class="d-flex ms-5 rounded-3" id="search-contenitore">
+                <i class="bi bi-search fs-4 mx-2 text-light align-self-center"></i>
+                <input type="text" id="searchBarDesk" class="playsolder mb-2 border-0 text-light"
+                  placeholder="Cosa vuoi ascoltare?">
+              </div>
             </div>
-              <h1 class="uno text-white">Cerca</h1>
-              <div class="d-none d-lg-flex justify-content-between pt-2">
+
+            <div id="avatarContainer" class="dropdown rounded-pill bg-black d-flex align-items-center ">
+              <img src="assets/imgs/main/image-1.jpg" id="avatarTop" class="rounded-circle" alt="avatar">
+              <button class="btn btn-black rounded-pill dropdown-toggle fw-bold text-white" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Lidia Nautilus...
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Apri Chat GPT</a></li>
+                <li><a class="dropdown-item" href="#">Fatti fare i compiti</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <h1 class="d-lg-none text-light text-center mt-4">Cerca</h1>
+          <div class="d-none d-lg-flex justify-content-between pt-2">
+          </div>
+          <div class="container">
+            <div class="playsolder d-lg-none mb-3">
+              <i class=" bi bi-search fs-2 mx-2 text-light align-self-center"></i>
+              <input type="text" id="searchBarMobile" placeholder="Cosa vuoi ascoltare?" class="fs-3">
+            </div>
+          </div>
+
+          <h2>Sfoglia tutto</h2>
+          <div class="search-page-scroll container-fluid ">
+            <div class="row justify-content-center ">
+              <div class="quattro rounded col-5 col-lg-2 bg-info ">
+                <h3>Musica</h3>
+                <img src="/assets/imgs/search/image-1.jpeg" alt="img" class="prova">
+
               </div>
-              <div class="container">
-                  <div class="playsolder d-lg-none mb-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                          viewBox="0 0 16 16">
-                          <path
-                              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                      </svg>
-                      <input type="text" placeholder="Cosa vuoi ascoltare?">
-                  </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-warning">
+                <h3>Podcast</h3>
+                <img src="/assets/imgs/search/image-2.jpg" alt="img" class="prova">
+
               </div>
-              <h2 class="mt-5">
-                  Sfoglia tutto
-              </h2>
-              <div class="search-page-scroll container-fluid text-center ms-2">
-                  <div class="row  text-center">
-                      <div class="quattro rounded col-5 col-lg-2 bg-info ">
-                         <h3>Musica</h3>
-                         <img src="/assets/imgs/search/image-1.jpeg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-warning">
-                         <h3>Podcast</h3>
-                         <img src="/assets/imgs/search/image-2.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-info ">
-                         <h3>Eventi dal vivo</h3>
-                         <img src="/assets/imgs/search/image-3.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-success ">
-                         <h3>Create per te</h3>
-                         <img src="/assets/imgs/search/image-4.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-warning ">
-                         <h3> Nuove uscite</h3>
-                         <img src="/assets/imgs/search/image-5.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-danger ">
-                         <h3>Il 2023 in podcast</h3>
-                         <img src="/assets/imgs/search/image-6.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-info ">
-                         <h3>Merch</h3>
-                         <img src="/assets/imgs/search/image-7.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-warning ">
-                         <h3>Estate</h3>
-                         <img src="/assets/imgs/search/image-8.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-danger ">
-                         <h3>Pop</h3>
-                         <img src="/assets/imgs/search/image-10.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-success ">
-                         <h3>Buone feste</h3>
-                         <img src="/assets/imgs/search/image-11.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-danger ">
-                         <h3>Hip Hop</h3>
-                         <img src="/assets/imgs/search/image-12.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-info ">
-                         <h3>Classifiche podcast</h3>
-                         <img src="/assets/imgs/search/image-13.jpeg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-success ">
-                         <h3>Nuove uscite nei podcast</h3>
-                         <img src="/assets/imgs/search/image-14.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-danger ">
-                         <h3>Video podcast</h3>
-                         <img src="/assets/imgs/search/image-15.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-warning ">
-                         <h3>Solo su Spotify</h3>
-                         <img src="/assets/imgs/search/image-16.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-success ">
-                         <h3>Classifiche</h3>
-                         <img src="/assets/imgs/search/image-17.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-danger ">
-                         <h3>Dance/Elettronica</h3>
-                         <img src="/assets/imgs/search/image-18.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-warningr ">
-                         <h3>Latina</h3>
-                         <img src="/assets/imgs/search/image-19.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-success ">
-                         <h3>Rock</h3>
-                         <img src="/assets/imgs/search/image-20.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-danger ">
-                         <h3>Indie</h3>
-                         <img src="/assets/imgs/search/image-22.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-info ">
-                         <h3>Scopri</h3>
-                         <img src="/assets/imgs/search/image-21.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-warning">
-                         <h3>Mood</h3>
-                         <img src="/assets/imgs/search/image-22.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-info ">
-                         <h3>Sanremo</h3>
-                         <img src="/assets/imgs/search/image-23.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-danger ">
-                         <h3>In auto</h3>
-                         <img src="/assets/imgs/search/image-25.jpeg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-success ">
-                         <h3>Di tendenza</h3>
-                         <img src="/assets/imgs/search/image-24.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-info ">
-                         <h3>Equal</h3>
-                         <img src="/assets/imgs/search/image-26.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-danger ">
-                         <h3>Radar</h3>
-                         <img src="/assets/imgs/search/image-27.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-warning ">
-                         <h3>Musica</h3>
-                         <img src="/assets/imgs/search/image-28.jpg" alt="img" class="prova">
-      
-                      </div>
-                      <div class="quattro rounded col-5 col-lg-2 bg-danger ">
-                          <h3>Radar</h3>
-                          <img src="/assets/imgs/search/image-30.jpg" alt="img" class="prova">
-       
-                       </div>
-                       <div class="quattro rounded col-5 col-lg-2 bg-warning ">
-                          <h3>Musica</h3>
-                          <img src="/assets/imgs/search/image-29.jpg" alt="img" class="prova">
-       
-                       </div>
-                    
-                  </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-info ">
+                <h3>Eventi dal vivo</h3>
+                <img src="/assets/imgs/search/image-3.jpg" alt="img" class="prova">
+
               </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-success ">
+                <h3>Create per te</h3>
+                <img src="/assets/imgs/search/image-4.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-warning ">
+                <h3> Nuove uscite</h3>
+                <img src="/assets/imgs/search/image-5.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-danger ">
+                <h3>Il 2023 in podcast</h3>
+                <img src="/assets/imgs/search/image-6.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-info ">
+                <h3>Merch</h3>
+                <img src="/assets/imgs/search/image-7.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-warning ">
+                <h3>Estate</h3>
+                <img src="/assets/imgs/search/image-8.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-danger ">
+                <h3>Pop</h3>
+                <img src="/assets/imgs/search/image-10.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-success ">
+                <h3>Buone feste</h3>
+                <img src="/assets/imgs/search/image-11.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-danger ">
+                <h3>Hip Hop</h3>
+                <img src="/assets/imgs/search/image-12.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-info ">
+                <h3>Classifiche podcast</h3>
+                <img src="/assets/imgs/search/image-13.jpeg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-success ">
+                <h3>Nuove uscite nei podcast</h3>
+                <img src="/assets/imgs/search/image-14.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-danger ">
+                <h3>Video podcast</h3>
+                <img src="/assets/imgs/search/image-15.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-warning ">
+                <h3>Solo su Spotify</h3>
+                <img src="/assets/imgs/search/image-16.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-success ">
+                <h3>Classifiche</h3>
+                <img src="/assets/imgs/search/image-17.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-danger ">
+                <h3>Dance/Elettronica</h3>
+                <img src="/assets/imgs/search/image-18.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-warningr ">
+                <h3>Latina</h3>
+                <img src="/assets/imgs/search/image-19.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-success ">
+                <h3>Rock</h3>
+                <img src="/assets/imgs/search/image-20.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-danger ">
+                <h3>Indie</h3>
+                <img src="/assets/imgs/search/image-22.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-info ">
+                <h3>Scopri</h3>
+                <img src="/assets/imgs/search/image-21.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-warning">
+                <h3>Mood</h3>
+                <img src="/assets/imgs/search/image-22.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-info ">
+                <h3>Sanremo</h3>
+                <img src="/assets/imgs/search/image-23.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-danger ">
+                <h3>In auto</h3>
+                <img src="/assets/imgs/search/image-25.jpeg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-success ">
+                <h3>Di tendenza</h3>
+                <img src="/assets/imgs/search/image-24.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-info ">
+                <h3>Equal</h3>
+                <img src="/assets/imgs/search/image-26.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-danger ">
+                <h3>Radar</h3>
+                <img src="/assets/imgs/search/image-27.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-warning ">
+                <h3>Musica</h3>
+                <img src="/assets/imgs/search/image-28.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-danger ">
+                <h3>Radar</h3>
+                <img src="/assets/imgs/search/image-30.jpg" alt="img" class="prova">
+
+              </div>
+              <div class="quattro rounded col-5 col-lg-2 bg-warning ">
+                <h3>Musica</h3>
+                <img src="/assets/imgs/search/image-29.jpg" alt="img" class="prova">
+
+              </div>
+
+            </div>
+          </div>
         </div>
         <div class="col-2 d-none d-lg-block bg-black">
           <div class="row align-items-center my-5">
@@ -300,7 +295,7 @@
               <p class="text-white">La passione di Cristo &#8729; Mel Gibson</p>
               <i class="bi bi-record-circle text-white">
               </i>
-                <p class="d-inline px-2 text-white">EP I</p>
+              <p class="d-inline px-2 text-white">EP I</p>
             </div>
             <div class="col-2"></div>
           </div>
@@ -313,7 +308,7 @@
               <p class="text-white">Ave Maria &#8729; Schubert</p>
               <i class="bi bi-music-note-beamed text-white">
               </i>
-                <p class="d-inline px-2 text-white">EP II</p>
+              <p class="d-inline px-2 text-white">EP II</p>
             </div>
             <div class="col-2"></div>
           </div>
@@ -326,7 +321,7 @@
               <p class="text-white">Padre Pio, tu che ora sei con Dio &#8729; Michele Zecchino</p>
               <i class="bi bi-music-note-beamed text-white">
               </i>
-                <p class="d-inline px-2 text-white">Inno Ventesimo</p>
+              <p class="d-inline px-2 text-white">Inno Ventesimo</p>
             </div>
             <div class="col-2"></div>
           </div>
@@ -383,7 +378,7 @@
     <div class="container-fluid d-flex justify-content-evenly">
       <div class="d-flex align-items-center">
         <i class="bi bi-house-door-fill text-white text-center"><a class="nav-link text-white fs-6"
-            href="#">Home</a></i>
+            href="./home-page.html">Home</a></i>
       </div>
 
       <i class="bi bi-search text-white text-center"><a class="nav-link text-white fs-6" href="#">Cerca</a></i>
