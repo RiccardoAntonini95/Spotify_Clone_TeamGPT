@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/circular-font.css">
   <link rel="stylesheet" href="assets/css/nav.css">
+  <script src="assets/js/scriptAlbum.js" defer></script>
   <title>Spotify Clone</title>
 </head>
 
@@ -101,7 +102,7 @@
               </ul>
             </div>
           </div>
-          <div id="albumPage">
+          <div id="albumPage">  <!-- contenitore del JS -->
             <div class="border border-white py-4"> <!--  la pagina album -->
               <div class="d-lg-flex flex-column flex-lg-row">
                 <div class="px-4">
@@ -127,7 +128,7 @@
                   </div>
                 </div>
               </div>
-              <div class="border border-white"> <!-- contenitore barra play statica -->
+              <div class="border border-warning"> <!-- contenitore barra play statica -->
                 <div
                   class="d-flex gap-4 justify-content-between justify-content-lg-start align-items-center px-4 d-lg-flex">
                   <div class="d-flex gap-4 order-lg-2">
@@ -138,81 +139,6 @@
                   <div class="d-flex gap-4">
                     <i class="fs-1 bi bi-shuffle text-secondary d-lg-none p-2"></i>
                     <i class="fs-1 bi bi-play-circle-fill p-2" id="btnPlay"></i>
-                  </div>
-                </div>
-                <div class="d-lg-none">  <!-- qua ciclo mobile -->
-                  <div class="row justify-content-between px-3">
-                    <div class="col text-start">
-                      <p class="m-0 text-white">titolo</p>
-                      <p class="m-0 text-secondary">artista</p>
-                    </div>
-                    <div class="col text-end">
-                      <i class="fs-1 bi bi-three-dots-vertical text-secondary"></i>
-                    </div>
-                  </div> <!-- qua fine ciclo mobile -->
-                  <div class="row justify-content-between px-3">
-                    <div class="col text-start">
-                      <p class="m-0 text-danger">titolo</p>
-                      <p class="m-0">artista</p>
-                    </div>
-                    <div class="col text-end">
-                      <i class="fs-1 bi bi-three-dots-vertical"></i>
-                    </div>
-                  </div>
-                  <div class="row justify-content-between px-3">
-                    <div class="col text-start">
-                      <p class="m-0">titolo</p>
-                      <p class="m-0">artista</p>
-                    </div>
-                    <div class="col text-end">
-                      <i class="fs-1 bi bi-three-dots-vertical"></i>
-                    </div>
-                  </div>
-                  <div class="row justify-content-between px-3">
-                    <div class="col text-start">
-                      <p class="m-0">titolo</p>
-                      <p class="m-0">artista</p>
-                    </div>
-                    <div class="col text-end">
-                      <i class="fs-1 bi bi-three-dots-vertical"></i>
-                    </div>
-                  </div>
-                  <div class="row justify-content-between px-3">
-                    <div class="col text-start">
-                      <p class="m-0">titolo</p>
-                      <p class="m-0">artista</p>
-                    </div>
-                    <div class="col text-end">
-                      <i class="fs-1 bi bi-three-dots-vertical"></i>
-                    </div>
-                  </div>
-                  <div class="row justify-content-between px-3">
-                    <div class="col text-start">
-                      <p class="m-0">titolo</p>
-                      <p class="m-0">artista</p>
-                    </div>
-                    <div class="col text-end">
-                      <i class="fs-1 bi bi-three-dots-vertical"></i>
-                    </div>
-                  </div>
-                  <div class="row justify-content-between px-3">
-                    <div class="col text-start">
-                      <p class="m-0">titolo</p>
-                      <p class="m-0">artista</p>
-                    </div>
-                    <div class="col text-end">
-                      <i class="fs-1 bi bi-three-dots-vertical"></i>
-                    </div>
-                  </div>
-
-                  <div class="row justify-content-between px-3">
-                    <div class="col text-start">
-                      <p class="m-0">titolo</p>
-                      <p class="m-0">artista</p>
-                    </div>
-                    <div class="col text-end">
-                      <i class="fs-1 bi bi-three-dots-vertical"></i>
-                    </div>
                   </div>
                 </div>
 
@@ -231,30 +157,41 @@
                       <i class="bi bi-clock"></i>
                     </div>
                   </div>
-                  <!--  da qua inizia ciclo -->
-                  <div class="row align-items-center">
-                    <div class="col-1 text-white">
-                      1 <!-- sostituisci con index del for -->
-                    </div>
-                    <div class="col-6 text-start text-white">
-                      <div>
-                        <p class="m-0">TITOLO</p>
-                        <p class="m-0 text-secondary">artista</p>
-                      </div>
-                    </div>
-                    <div class="col-4 text-white">
-                      numero a cazzo
-                    </div>
-                    <div class="col-1 text-white">
-                      minuti
+                </div>
+              </div>  <!-- questo div bordo giallo -->
+              <div class="d-lg-none">  <!-- qua ciclo mobile -->
+                <div class="row justify-content-between px-3">
+                  <div class="col text-start">
+                    <p class="m-0 text-white">titolo</p>
+                    <p class="m-0 text-secondary">artista</p>
+                  </div>
+                  <div class="col text-end">
+                    <i class="fs-1 bi bi-three-dots-vertical text-secondary"></i>
+                  </div>
+                </div> 
+              </div>  <!-- qua fine ciclo mobile -->
+            <!--  da qua inizia ciclo desk-->
+                <div class="row align-items-center d-none d-lg-flex">
+                  <div class="col-1 text-white">
+                    1 <!-- sostituisci con index del for -->
+                  </div>
+                  <div class="col-6 text-start text-white">
+                    <div>
+                      <p class="m-0">TITOLO</p>
+                      <p class="m-0 text-secondary">artista</p>
                     </div>
                   </div>
-                  <!--  fine ciclo  -->
+                  <div class="col-4 text-white">
+                    numero a cazzo
+                  </div>
+                  <div class="col-1 text-white">
+                    minuti
+                  </div>
                 </div>
-              </div>
+              <!--  fine ciclo  -->
             </div>
           </div>
-        </div> <!-- qua va la pagina album col JS di RICCARDO fai query selector-->
+        </div> 
         <div class="col-2 d-none d-lg-block bg-black">
           <div class="row align-items-center my-5">
             <div class="col-8">
