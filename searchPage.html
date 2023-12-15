@@ -17,7 +17,7 @@
   <main>
     <div class="container-fluid h-100">
       <div class="row h-100">
-        <div class="col-3 d-none d-lg-block">
+        <div class="col-3 d-none d-lg-block" id="barra-sinistra">
           <nav id="sideNav" class="nav d-lg flex-column p-2">
             <div class="d-flex align-items-center"><i class="bi bi-three-dots text-white"></i><a
                 class="nav-link text-white" href="#"></a></div>
@@ -82,51 +82,44 @@
           </div>
         </div>
 
-        <div class="col text-center">
-            <div class="d-none d-lg-flex justify-content-evenly pt-2 fixed-top">
-                <div class="d-flex gap-2">
-                    <div class="text-secondary rounded-circle bg-black fs-5 navArrows"><i class="bi bi-chevron-left"></i>
-                    </div>
-                    <div class="text-secondary rounded-circle bg-black fs-5 navArrows"><i class="bi bi-chevron-right"></i></div>
-                </div>
-<!--                  <div class="playsolder d-none d-lg-inline mb-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                      viewBox="0 0 16 16">
-                      <path
-                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                  </svg>
-                  <input type="text" id="searchBar" placeholder="Cosa vuoi ascoltare?">
-              </div>  --> <!-- QUESTA VA AGGIUSTATA NELLA NAV VA IL SEARCH -->
-                <div id="avatarContainer" class="dropdown rounded-pill bg-black d-flex align-items-start">
-                    <img src="assets/imgs/main/image-1.jpg" id="avatarTop" class="rounded-circle p-1" alt="avatar">
-                    <button class="btn btn-black rounded-pill dropdown-toggle fw-bold text-white" type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Lidia Nautilus...
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Apri Chat GPT</a></li>
-                        <li><a class="dropdown-item" href="#">Fatti fare i compiti</a></li>
-                    </ul>
-                </div>
-            </div>
-              <h1 class="uno text-white">Cerca</h1>
-              <div class="d-none d-lg-flex justify-content-between pt-2">
-              </div>
-              <div class="container">
-                  <div class="playsolder d-lg-none mb-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                          viewBox="0 0 16 16">
-                          <path
-                              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                      </svg>
-                      <input type="text" placeholder="Cosa vuoi ascoltare?">
+        <div class="col">
+            <div class="d-none d-lg-flex justify-content-evenly pt-4 fixed-top ms-5">
+              <div class="d-flex" id="button-leftRight">
+                <i class="bi bi-chevron-left text-secondary rounded-circle bg-black fs-3 navArrows me-2"></i>
+                <i class="bi bi-chevron-right text-secondary rounded-circle bg-black fs-3 navArrows"></i>
+  
+                  <div class="d-flex ms-5 rounded-3" id="search-contenitore">
+                    <i class="bi bi-search fs-4 mx-2 text-light align-self-center"></i>
+                    <input type="text" class="playsolder mb-2 border-0 text-light"  placeholder="Cosa vuoi ascoltare?">
                   </div>
               </div>
-              <h2 class="mt-5">
-                  Sfoglia tutto
-              </h2>
-              <div class="container-fluid text-center ms-2">
-                  <div class="row  text-center">
+  
+              <div id="avatarContainer" class="dropdown rounded-pill bg-black d-flex align-items-center ">
+                <img src="assets/imgs/main/image-1.jpg" id="avatarTop" class="rounded-circle" alt="avatar">
+                <button class="btn btn-black rounded-pill dropdown-toggle fw-bold text-white" type="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Lidia Nautilus...
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Apri Chat GPT</a></li>
+                  <li><a class="dropdown-item" href="#">Fatti fare i compiti</a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <h1 class="d-lg-none text-light text-center mt-4">Cerca</h1>
+            <div class="d-none d-lg-flex justify-content-between pt-2">
+            </div>
+            <div class="container">
+              <div class="playsolder d-lg-none mb-3">
+                <i class=" bi bi-search fs-2 mx-2 text-light align-self-center"></i>
+                <input type="text" placeholder="Cosa vuoi ascoltare?" class="fs-3">
+              </div>
+            </div>
+            
+              <h2>Sfoglia tutto</h2>
+              <div class="container-fluid ">
+                  <div class="row justify-content-center ">
                       <div class="quattro rounded col-5 col-lg-2 bg-info ">
                          <h3>Musica</h3>
                          <img src="/assets/imgs/search/image-1.jpeg" alt="img" class="prova">
