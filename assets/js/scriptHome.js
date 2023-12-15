@@ -14,7 +14,7 @@ fetch(urlQueen, {
     .then(data => { 
         console.log(data)
 
-        for (let i = 1; i < 13; i++) {
+        for (let i = 1; i < 16; i++) {
             const idAlbum = data.data[i].album.id
             const idQueen = data.data[i].artist.id
             const albumQueen = data.data[i].album.cover
