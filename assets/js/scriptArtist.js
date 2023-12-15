@@ -33,17 +33,17 @@ if (artistId) {
 
             const templateStatic = `
             <div 
-style="background-image: url(${artistPic}); background-size: contain; padding-top: 240px; background-repeat: repeat;">
+style="background-image: url(${artistPic}); background-size: contain; padding-top: 240px; background-repeat: no-repeat; background-position: center;">
 
-<div class="d-flex align-items-center"><i class="bi bi-patch-check-fill px-2" id="verificato"></i><p class="d-inline px-1 m-0">Artista verificato</p></div>
-<h1 class="m-0 px-2 fw-bold">${nameArtist}</h1>
-<p class="d-flex d-lg-none m-0 px-2 fw-bold"> ${followerArtist} ascoltatori mensili</p>
+<div class="d-flex align-items-center"><i class="bi bi-patch-check-fill px-2" id="verificato"></i><p class="d-inline px-1 m-0 text-white">Artista verificato</p></div>
+<h1 class="m-0 px-2 fw-bold text-white titleArtist">${nameArtist}</h1>
+<p class="d-flex d-lg-none m-0 px-2 fw-bold text-white"> ${followerArtist} ascoltatori mensili</p>
 <!--questo deve sparire su mobile-->
 </div> <!-- questo è il contenitore della foto -->
 
 
 <div id="sezioneDue">
-<p class="d-none d-lg-flex m-0 pt-1 fw-bold"> ${followerArtist} ascoltatori mensili</p>
+<p class="d-none d-lg-flex m-0 pt-1 fw-bold text-white"> ${followerArtist} ascoltatori mensili</p>
 
 <!-- questa è la barra play -->
 <div class="d-flex justify-content-between flex-row-reverse flex-lg-row justify-content-lg-start">
@@ -63,7 +63,7 @@ style="background-image: url(${artistPic}); background-size: contain; padding-to
             <div class="d-flex flex-column align-items-lg-start">
                 <div class="">
                     <div>
-                        <h4 class="m-3 d-none d-lg-block fw-bold" id="titoloh">Brani che ti piacciono</h4>
+                        <h4 class="m-3 d-none d-lg-block fw-bold text-white" id="titoloh">Brani che ti piacciono</h4>
                     </div>
                     <div class="d-flex">
                         <div> <!-- questa foto è dinamica -->
@@ -74,8 +74,8 @@ style="background-image: url(${artistPic}); background-size: contain; padding-to
                         </div>
                         <div class="ml-lg-3 mt-3 px-2">
                             <h5 class="d-block d-lg-none text-white fw-bold">Brani che ti piacciono</h5>
-                            <p class="d-none d-lg-flex m-0 fw-bold">Hai messo Mi piace a 11 brani</p> <!-- numero brani dinamico -->
-                            <p class="m-0">8 brani di ${nameArtist}</p><!-- #num Brani di #artista -->
+                            <p class="d-none d-lg-flex m-0 fw-bold text-white">Hai messo Mi piace a 11 brani</p> <!-- numero brani dinamico -->
+                            <p class="m-0 text-white">8 brani di ${nameArtist}</p><!-- #num Brani di #artista -->
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ style="background-image: url(${artistPic}); background-size: contain; padding-to
         
         <div class="col-lg-6 order-lg-1">
             <div id="albumList" class="">
-            <h2 class="p-3 fw-bold">Popolari</h2>
+            <h2 class="p-3 fw-bold text-white">Popolari</h2>
                 <div id="cicloArtist">
 
                 </div>
@@ -111,12 +111,12 @@ style="background-image: url(${artistPic}); background-size: contain; padding-to
     <div class="d-flex m-3 align-items-center">
         <a href="./album-page.html?id=${albumId}&nome=${nameArtist}"><img src="${albumPic}" alt="img album" width="50" height="50"></a>
         <div class="d-lg-flex px-2 align-items-center">
-            <h3 class="m-0">${trackTitle}</h3><!--affiancare a img-->
+            <h3 class="m-0 text-white">${trackTitle}</h3><!--affiancare a img-->
             <p class="px-2 m-0">${numAscolti}</p><!--affiancare all'img sotto h3-->
         </div>
     </div>
     <div class="align-items-center">
-        <p class="d-none d-lg-flex m-0 pt-1">${durataTrack}</p><!--solo su desk-->
+        <p class="d-none d-lg-flex m-0 pt-1 text-white">${durataTrack/100}</p><!--solo su desk-->
         <i class="bi bi-three-dots-vertical d-lg-none"></i>
     </div>
 </div>  
@@ -153,17 +153,17 @@ style="background-image: url(${artistPic}); background-size: contain; padding-to
 
             const templateStatic = `
             <div 
-style="background-image: url(${artistPic}); background-size: contain; padding-top: 240px; background-repeat: repeat;">
+style="background-image: url(${artistPic}); background-size: contain; padding-top: 240px; background-repeat: no-repeat; background-position: center;">
 
-<div class="d-flex align-items-center"><i class="bi bi-patch-check-fill px-2" id="verificato"></i><p class="d-inline px-1 m-0">Artista verificato</p></div>
-<h1 class="m-0 px-2 fw-bold">${nameArtist}</h1>
-<p class="d-flex d-lg-none m-0 px-2 fw-bold"> ${followerArtist} ascoltatori mensili</p>
+<div class="d-flex align-items-center"><i class="bi bi-patch-check-fill px-2" id="verificato"></i><p class="d-inline px-1 m-0 text-white">Artista verificato</p></div>
+<h1 class="m-0 px-2 fw-bold text-white titleArtist">${nameArtist}</h1>
+<p class="d-flex d-lg-none m-0 px-2 fw-bold text-white"> ${followerArtist} ascoltatori mensili</p>
 <!--questo deve sparire su mobile-->
 </div> <!-- questo è il contenitore della foto -->
 
 
 <div id="sezioneDue">
-<p class="d-none d-lg-flex m-0 pt-1 fw-bold"> ${followerArtist} ascoltatori mensili</p>
+<p class="d-none d-lg-flex m-0 pt-1 fw-bold text-white"> ${followerArtist} ascoltatori mensili</p>
 
 <!-- questa è la barra play -->
 <div class="d-flex justify-content-between flex-row-reverse flex-lg-row justify-content-lg-start">
@@ -183,7 +183,7 @@ style="background-image: url(${artistPic}); background-size: contain; padding-to
             <div class="d-flex flex-column align-items-lg-start">
                 <div class="">
                     <div>
-                        <h4 class="m-3 d-none d-lg-block fw-bold" id="titoloh">Brani che ti piacciono</h4>
+                        <h4 class="m-3 d-none d-lg-block fw-bold text-white" id="titoloh">Brani che ti piacciono</h4>
                     </div>
                     <div class="d-flex">
                         <div> <!-- questa foto è dinamica -->
@@ -194,8 +194,8 @@ style="background-image: url(${artistPic}); background-size: contain; padding-to
                         </div>
                         <div class="ml-lg-3 mt-3 px-2">
                             <h5 class="d-block d-lg-none text-white fw-bold">Brani che ti piacciono</h5>
-                            <p class="d-none d-lg-flex m-0 fw-bold">Hai messo Mi piace a 11 brani</p> <!-- numero brani dinamico -->
-                            <p class="m-0">8 brani di ${nameArtist}</p><!-- #num Brani di #artista -->
+                            <p class="d-none d-lg-flex m-0 fw-bold text-white">Hai messo Mi piace a 11 brani</p> <!-- numero brani dinamico -->
+                            <p class="m-0 text-white">8 brani di ${nameArtist}</p><!-- #num Brani di #artista -->
                         </div>
                     </div>
                 </div>
@@ -204,7 +204,7 @@ style="background-image: url(${artistPic}); background-size: contain; padding-to
         
         <div class="col-lg-6 order-lg-1">
             <div id="albumList" class="">
-            <h2 class="p-3 fw-bold">Popolari</h2>
+            <h2 class="p-3 fw-bold text-white">Popolari</h2>
                 <div id="cicloArtist">
 
                 </div>
@@ -231,12 +231,12 @@ style="background-image: url(${artistPic}); background-size: contain; padding-to
     <div class="d-flex m-3 align-items-center">
         <a href="./album-page.html?id=${albumId}&nome=${nameArtist}"><img src="${albumPic}" alt="img album" width="50" height="50"></a>
         <div class="d-lg-flex px-2 align-items-center">
-            <h3 class="m-0">${trackTitle}</h3><!--affiancare a img-->
-            <p class="px-2 m-0">${numAscolti}</p><!--affiancare all'img sotto h3-->
+            <h3 class="m-0 text-white">${trackTitle}</h3><!--affiancare a img-->
+            <p class="px-2 m-0 text-white">${numAscolti}</p><!--affiancare all'img sotto h3-->
         </div>
     </div>
     <div class="align-items-center">
-        <p class="d-none d-lg-flex m-0 pt-1">${durataTrack}</p><!--solo su desk-->
+        <p class="d-none d-lg-flex m-0 pt-1 text-white">${durataTrack/100}</p><!--solo su desk-->
         <i class="bi bi-three-dots-vertical d-lg-none"></i>
     </div>
 </div>  

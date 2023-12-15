@@ -37,7 +37,7 @@ fetch(urlAlbum, {
         <a href="./artist-page.html?id=${artistId}&nameArtist=${artistName}"><img src="${artistPic}" width="25" id="fotoArtista" class="rounded-circle"
           alt="foto-artista"></a>
         <div class="d-flex gap-1">
-          <a href="./artist-page.html?id=${artistId}&nameArtist=${artistName}"><p class="fw-bold">${artistName}</p></a>
+          <a class="text-decoration-none" href="./artist-page.html?id=${artistId}&nameArtist=${artistName}"><p class="fw-bold text-secondary">${artistName}</p></a>
           <p class="d-none d-lg-inline">&#8729;</p>
           <p class="d-none d-lg-inline">${releaseDate}</p>
           <p class="d-none d-lg-inline">&#8729;</p>
@@ -108,7 +108,7 @@ fetch(urlAlbum, {
         <div class="row justify-content-between px-3">
           <div class="col text-start">
             <p class="m-0 text-white">${titleTrack}</p>
-            <a href="./artist-page.html?id=${artistIdFor}&nameArtist=${artistTrack}"><p class="m-0 text-secondary">${artistTrack}</p></a>
+            <a class="text-decoration-none" href="./artist-page.html?id=${artistIdFor}&nameArtist=${artistTrack}"><p class="m-0 text-secondary">${artistTrack}</p></a>
           </div>
           <div class="col text-end">
             <i class="fs-1 bi bi-three-dots-vertical text-secondary"></i>
@@ -122,7 +122,7 @@ fetch(urlAlbum, {
           <div class="col-6 text-start text-white">
             <div>
               <p class="m-0">${titleTrack}</p>
-              <a href="./artist-page.html?id=${artistIdFor}&nameArtist=${artistTrack}"><p class="m-0 text-secondary">${artistTrack}</p></a>
+              <a class="text-decoration-none" href="./artist-page.html?id=${artistIdFor}&nameArtist=${artistTrack}"><p class="m-0 text-secondary">${artistTrack}</p></a>
             </div>
           </div>
           <div class="col-4 text-white">

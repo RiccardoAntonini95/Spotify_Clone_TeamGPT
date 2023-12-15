@@ -1,50 +1,36 @@
-#sezioneDue {
-  background: linear-gradient(to bottom, rgb(61, 61, 61), #121212);
-}
-body i {
-  font-size: 2rem;
-  color: #a5a5a3;
-}
-body h1,
-h4 {
-  color: whitesmoke;
-}
-body h1 {
+ #sezioneDue{
+  background: linear-gradient(to bottom, rgb(61, 61, 61), #121212);}
+.titleArtist{
   padding-bottom: 35px;
 }
-#titoloh {
+#titoloh{
   font-size: 30px;
   margin: 16px;
   color: whitesmoke;
 }
-#verificato {
+#verificato{
   color: #0089fa;
+  font-size: 2rem;
 }
-body h2,
-p,
-h1 {
-  color: whitesmoke;
-}
-#albumList h3,
-p {
+#albumList h3, p{
   color: whitesmoke;
   order: 1;
 }
-#btnPlay {
+#btnPlay{
   color: green;
   border-color: #121212;
   font-size: 4rem;
 }
-#btnShuffle {
+#btnShuffle{
   color: green;
   font-size: 3rem;
 }
-#fotoArtista {
+#fotoArtista{
   margin-left: 15px;
   border-radius: 100%;
 }
-#heartIcon {
-  background-color: #adfebe;
+#heartIcon{
+  background-color: #ADFEBE;
   border-radius: 100%;
   border: 1px solid white;
   width: 20px;
@@ -55,11 +41,11 @@ p {
   bottom: 14px;
   right: -45px;
 }
-.heartIcon {
+.heartIcon{
   font-size: 10px;
 }
-#heartIconDesk {
-  background-color: #1db954;
+#heartIconDesk{
+  background-color: #1DB954;
   border-radius: 100%;
   border: 1px solid black;
   width: 20px;
@@ -71,19 +57,19 @@ p {
   right: -45px;
 }
 @media screen and (min-width: 992px) {
-  .bi-play-circle-fill::before {
-    content: "\f4f2";
-    background-color: black;
-    border-radius: 100%;
-  }
+.bi-play-circle-fill::before {
+  content: "\f4f2";
+  background-color: black;
+  border-radius: 100%;
+}
 }
 
 @media screen and (max-width: 992px) {
   .bi-play-circle-fill::before {
-    content: "\f4f2";
-    background-color: #f9fbf5;
-    border-radius: 3000px;
-    color: #006401;
-    border-color: 25px solid #006401;
+      content: "\f4f2";
+      background-color: #F9FBF5;
+      border-radius: 3000px;
+      color: #006401;
+      border-color: 25px solid #006401;
   }
-}
+  }
