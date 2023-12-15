@@ -33,7 +33,7 @@ fetch(urlAlbum, {
       <p class="d-none d-lg-block text-white fw-bold align-self-end mb-0 w-100">ALBUM</p>
       <p class="display-4 text-white fw-bold">${albumName}</p>
       <div class="d-flex text-white gap-1 align-self-end">
-        <a href=""><img src="${artistPic}" width="25" id="fotoArtista" class="rounded-circle"
+        <a href="./artist-page.html?"><img src="${artistPic}" width="25" id="fotoArtista" class="rounded-circle"
           alt="foto-artista"></a>
         <div class="d-flex gap-1">
           <p class="fw-bold">${artistName}</p>
